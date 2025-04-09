@@ -1,1 +1,5 @@
-
+python-telegram-bot
+gspread
+oauth2client
+gunicorn
+flask
