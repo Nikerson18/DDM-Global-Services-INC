@@ -83,7 +83,7 @@ drivers_info = {
     ),
     "Водитель OLEH SEMENENNKO": (
         "📌 Driver Name: OLEH SEMENENNKO \n"
-        "📞 Phone Number: 786-843-1879 \n"
+        "📞 Phone Number: 701-971-4705 \n"
         "🚛 Truck Number: 25 \n"
         "🚂 Trailer Number: 25 \n"
         "🔑 VIN:3C63RRHL2RG307630 \n" 
