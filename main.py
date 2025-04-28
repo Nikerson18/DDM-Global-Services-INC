@@ -429,7 +429,7 @@ drivers_info = {
         "🔑 VIN: \n" 
         "⚓Ramps: 16ft \n"
         "⚖ Weight:  \n"
-        "🅱 Owner: Ruslan 804-405-7438"
+        "🅱 Owner: Ruslan 804-405-7438"        
     ),
 }
 # URL для фотографий и файлов
