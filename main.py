@@ -60,7 +60,7 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель BAIR DABAIN", "Водитель SRV Uruzmag Tsakoev",  "Водитель MUKHAR KHUGAEV", "Водитель ALEKSANDR PAVLOV", "Водитель INAL VALIEV"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель BAIR DABAIN", "Водитель SRV Uruzmag Tsakoev", "Водитель ALEKSANDR PAVLOV", "Водитель INAL VALIEV"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель SERGHEI CIOBANU", "Водитель SERHII HONCHARENKO", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA", "Водитель MIRBEK ALOEV"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC Rustam Tambiev"],
@@ -150,16 +150,6 @@ drivers_info = {
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
-    ),
-    "Водитель MUKHAR KHUGAEV": (
-        "📌 Driver Name: MUKHAR KHUGAEV \n"
-        "📞 Phone Number: 224-651-5069 \n"
-        "🚛 Truck Number: 31 \n"
-        "🚂 Trailer Number: 31 \n"
-        "🔑 VIN:3C63RRJLLXNG152569 \n"
-        "⚓Ramps: 10ft \n"
-        "⚖ Weight: 8500lb \n"
-        "🅱 Owner: Alex"
     ),
     "Водитель BAIR DABAIN": (
         "📌 Driver Name: BAIR DABAIN \n"
@@ -450,15 +440,11 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1WQb3XId7N5Ofwzc3mcDZ2JIpSDhvm2Lo/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1F8zgKUpT6KW4dEd1O9viAAOdVBUi2oHr/view?usp=drive_link"
     },
-    "Водитель MARAT KAZIEV": {
-        "photo": "https://drive.google.com/file/d/1DoRXI4QLuC0-05Zl5U7tv0ONYE449eEn/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1tf90OVNgaMQA3djkYzsapF1-bgENxgId/view?usp=drive_link"
-    },
     "Водитель ALEKSEI LAMATKHANOV": {
         "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link"
     },
-    "Водитель AZAT BORONCHIEV": {
+    "Водитель SRV Uruzmag Tsakoev": {
         "photo": "https://drive.google.com/file/d/1fa58slTENamCbpZ4hUMeJhtVIXsXJJjk/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1N3IdZjiMWHZDRCIJK21cNSUM2PlKTOUT/view?usp=drive_link"
     },
@@ -469,10 +455,6 @@ drivers_files = {
     "Водитель ALEKSANDR PAVLOV": {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/11Opx2TN6ScaJ31YjHyB1IQ6ktOq26KM9/view?usp=drive_link"
-    },
-    "Водитель MUKHAR KHUGAEV": {
-        "photo": "https://drive.google.com/file/d/1bjLiM3Ojt880hei6Jeb7_nbSh2r2NyJ_/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Gspmhy-V8uvniWVRFNYF-0y3OgKODF_F/view?usp=drive_link"
     },
     "Водитель BAIR DABAIN": {
         "photo": "https://drive.google.com/file/d/1EiLW7-ITrIKjqefHMU1MtHBTwFM-V7yG/view?usp=drive_link",
@@ -522,13 +504,17 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/10D25opmpC3DDgeWYPri8HzHUQfAs3dU9/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/17M0f3cTycjjtptvjXz119oIkHNd2-DPN/view?usp=drive_link"
     },
-    "Водитель ASKHABALI SHABANOV": {
+    "Водитель MIM Logistics INC Anvar": {
         "photo": "https://drive.google.com/file/d/1rNpG4XpHUSImDMUwMVmTsIRmY8a1_WJ_/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1jDhOocC4s0d1ZaW863WQcTbHm_3Zehig/view?usp=drive_link"
     },
     "Водитель ILLIA HORBATOK": {
         "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link"
+    },
+    "Водитель MIM Logistics INC Rustam Tambiev": {
+        "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link"        
     },
     "Водитель TSYDEN TOBODORZHIEV": {
         "photo": "https://drive.google.com/file/d/15JGHtHuNOrznk-te8uDWRDkhEvVH5OOd/view?usp=drive_link",
@@ -577,6 +563,10 @@ drivers_files = {
     "Водитель SOSLAN GAGLOEV": {
         "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1vs1lmsH4MqphrU5p_GenEtTPQ2PwPXxR/view?usp=drive_link"
+    },
+    "Водитель GREENGRAYLINE Ivan": {
+        "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1vs1lmsH4MqphrU5p_GenEtTPQ2PwPXxR/view?usp=drive_link"        
     },
 }
 
