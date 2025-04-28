@@ -60,13 +60,13 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель BAIR DABAIN", "Водитель MARAT KAZIEV", "Водитель AZAT BORONCHIEV", "Водитель MUKHAR KHUGAEV", "Водитель ALEKSANDR PAVLOV", "Водитель INAL VALIEV"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель BAIR DABAIN", "Водитель SRV Uruzmag Tsakoev",  "Водитель MUKHAR KHUGAEV", "Водитель ALEKSANDR PAVLOV", "Водитель INAL VALIEV"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель SERGHEI CIOBANU", "Водитель SERHII HONCHARENKO", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA", "Водитель MIRBEK ALOEV"],
-    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель ASKHABALI SHABANOV", "Водитель ILLIA HORBATOK"],
+    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC Rustam Tambiev"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV"],
-    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV"]
+    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE Ivan"]
 
 }
 
@@ -121,25 +121,15 @@ drivers_info = {
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель MARAT KAZIEV": (
-        "📌 Driver Name: MARAT KAZIEV \n"
-        "📞 Phone Number: 754-280-7200 \n"
-        "🚛 Truck Number: 14 \n"
-        "🚂 Trailer Number: 14 \n"
-        "🔑 VIN:3C63RRHL6RG289665 \n" 
-        "⚓Ramps: Mega Ramps \n"
-        "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Alex"
-    ),
-    "Водитель AZAT BORONCHIEV": (
-        "📌 Driver Name: AZAT BORONCHIEV \n"
-        "📞 Phone Number: 929-627-1722 \n"
-        "🚛 Truck Number: 21 \n"
-        "🚂 Trailer Number: 21 \n"
-        "🔑 VIN:3C63RRGL3RG109933 \n" 
+    "Водитель SRV Uruzmag Tsakoev": (
+        "📌 Driver Name: SRV Uruzmag Tsakoev \n"
+        "📞 Phone Number: 224-284-9071 \n"
+        "🚛 Truck Number:  \n"
+        "🚂 Trailer Number:  \n"
+        "🔑 VIN: \n" 
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Alexei Lamatkhanov"
+        "🅱 Owner: Stas"
     ),
     "Водитель INAL VALIEV": (
         "📌 Driver Name: INAL VALIEV \n"
@@ -281,15 +271,15 @@ drivers_info = {
         "⚖ Weight: 8860lb \n"
         "🅱 Owner: Rassul"
     ),
-    "Водитель ASKHABALI SHABANOV": (
-        "📌 Driver Name: ASKHABALI SHABANOV \n"
-        "📞 Phone Number: 520-994-9999 \n"
+    "Водитель MIM Logistics INC Anvar": (
+        "📌 Driver Name: Anvar \n"
+        "📞 Phone Number: 224-422-3658 \n"
         "🚛 Truck Number: 7 \n"
         "🚂 Trailer Number: 7 \n"
-        "🔑 VIN:3C63RRHL4RG358188 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN: \n" 
+        "⚓Ramps:  \n"
         "⚖ Weight: 9360lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Owner"
     ),
     "Водитель ILLIA HORBATOK": (
         "📌 Driver Name: ILLIA HORBATOK \n"
@@ -300,6 +290,16 @@ drivers_info = {
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex"
+     ),
+    "Водитель MIM Logistics INC Rustam Tambiev": (
+        "📌 Driver Name: Rustam Tambiev \n"
+        "📞 Phone Number: 224-443-3233 \n"
+        "🚛 Truck Number: 41 \n"
+        "🚂 Trailer Number: 41 \n"
+        "🔑 VIN: \n"
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 8720lb \n"
+        "🅱 Owner: "
     ),
     "Водитель TSYDEN TOBODORZHIEV": (
         "📌 Driver Name: TSYDEN TOBODORZHIEV \n"
@@ -420,6 +420,16 @@ drivers_info = {
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
+    ),
+    "Водитель GREENGRAYLINE Ivan": (
+        "📌 Driver Name: Ivan \n"
+        "📞 Phone Number: 347-845-5604 \n"
+        "🚛 Truck Number:  \n"
+        "🚂 Trailer Number:  \n"
+        "🔑 VIN: \n" 
+        "⚓Ramps: 16ft \n"
+        "⚖ Weight:  \n"
+        "🅱 Owner: Ruslan 804-405-7438"
     ),
 }
 # URL для фотографий и файлов
