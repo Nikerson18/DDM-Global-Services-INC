@@ -231,16 +231,6 @@ drivers_info = {
         "⚖ Weight: 8100lb \n"
         "🅱 Owner: Dumitru OU"
     ),
-    "Водитель YAROSLAV PANEVNYK": (
-        "📌 Driver Name: YAROSLAV PANEVNYK \n"
-        "📞 Phone Number: 916-940-5888 \n"
-        "🚛 Truck Number: 26 \n"
-        "🚂 Trailer Number: 26 \n"
-        "🔑 VIN:1GT49LEY8RF467913 \n" 
-        "⚓Ramps: Mega Ramps \n"
-        "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Owner Operator"
-    ),
     "Водитель (Said) MAGOMEDSAID GABIBULAEV": (
         "📌 Driver Name: MAGOMEDSAID GABIBULAEV \n"
         "📞 Phone Number: 305-391-1839 \n"
@@ -250,6 +240,16 @@ drivers_info = {
         "⚓Ramps: 12ft \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Ruslan"
+    ),
+    "Водитель YAROSLAV PANEVNYK": (
+        "📌 Driver Name: YAROSLAV PANEVNYK \n"
+        "📞 Phone Number: 916-940-5888 \n"
+        "🚛 Truck Number: 26 \n"
+        "🚂 Trailer Number: 26 \n"
+        "🔑 VIN:1GT49LEY8RF467913 \n" 
+        "⚓Ramps: Mega Ramps \n"
+        "⚖ Weight: 9500lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель MARIN GULIA": (
         "📌 Driver Name: MARIN GULIA \n"
