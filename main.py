@@ -65,7 +65,7 @@ dispatchers = {
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV"],
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII"],
     "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE Ivan", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
@@ -271,14 +271,14 @@ drivers_info = {
         "⚖ Weight: 8860lb \n"
         "🅱 Owner: Rassul"
     ),
-    "Водитель MIM Logistics INC Anvar": (
-        "📌 Driver Name: Anvar \n"
+    "Водитель MIM Logistics INC ANVAR BIDZHIEV": (
+        "📌 Driver Name: ANVAR BIDZHIEV \n"
         "📞 Phone Number: 224-422-3658 \n"
-        "🚛 Truck Number: 7 \n"
-        "🚂 Trailer Number: 7 \n"
-        "🔑 VIN: \n" 
-        "⚓Ramps:  \n"
-        "⚖ Weight: 9360lb \n"
+        "🚛 Truck Number: 43 \n"
+        "🚂 Trailer Number: 43 \n"
+        "🔑 VIN:1FT8W3DT5NEG00613 \n" 
+        "⚓Ramps: n/a \n"
+        "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner"
     ),
     "Водитель ILLIA HORBATOK": (
@@ -291,14 +291,14 @@ drivers_info = {
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex"
      ),
-    "Водитель MIM Logistics INC Rustam Tambiev": (
-        "📌 Driver Name: Rustam Tambiev \n"
+    "Водитель MIM Logistics INC RUSTAM TAMBIEV": (
+        "📌 Driver Name: RUSTAM TAMBIEV \n"
         "📞 Phone Number: 224-443-3233 \n"
         "🚛 Truck Number: 41 \n"
         "🚂 Trailer Number: 41 \n"
-        "🔑 VIN: \n"
+        "🔑 VIN:1FT8W3DT7PEC16514 \n"
         "⚓Ramps: 8ft \n"
-        "⚖ Weight: 8720lb \n"
+        "⚖ Weight: 9000lb \n"
         "🅱 Owner: "
     ),
     "Водитель TSYDEN TOBODORZHIEV": (
@@ -390,6 +390,16 @@ drivers_info = {
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9700lb \n"
         "🅱 Owner: Owner Operator"
+    ),
+    "Водитель EVGENY SYROMITSKII": (
+        "📌 Driver Name: TAULAN TOTORKULOV \n"
+        "📞 Phone Number: 754-600-7170 \n"
+        "🚛 Truck Number: 2 \n"
+        "🚂 Trailer Number: 2 \n"
+        "🔑 VIN:3C63RRHL2RG358187 \n" 
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 8800lb \n"
+        "🅱 Owner: "
     ),
     "Водитель ERDEM DORZHIEV": (
         "📌 Driver Name: ERDEM DORZHIEV \n"
