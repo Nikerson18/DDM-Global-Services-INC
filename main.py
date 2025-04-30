@@ -61,8 +61,8 @@ def main_menu():
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель SRV Uruzmag Tsakoev", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
-    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель MIRCEA VITION", "Водитель SERHII HONCHARENKO", "Водитель GRIGORII MOSKALETS"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YAROSLAV PANEVNYK"],
+    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель MIRCEA VITION", "Водитель GRIGORII MOSKALETS", "Водитель SERHII HONCHARENKO"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV"],
@@ -231,22 +231,32 @@ drivers_info = {
         "⚖ Weight: 8100lb \n"
         "🅱 Owner: Dumitru OU"
     ),
-    "Водитель MIRBEK ALOEV": (
-        "📌 Driver Name: MIRBEK ALOEV \n"
-        "📞 Phone Number: 916-767-6753 \n"
-        "🚛 Truck Number: 32 \n"
-        "🚂 Trailer Number: 32 \n"
-        "🔑 VIN:3C63RRHL2RG289436 \n" 
-        "⚓Ramps: 8ft \n"
+    "Водитель YAROSLAV PANEVNYK": (
+        "📌 Driver Name: YAROSLAV PANEVNYK \n"
+        "📞 Phone Number: 916-940-5888 \n"
+        "🚛 Truck Number: 26 \n"
+        "🚂 Trailer Number: 26 \n"
+        "🔑 VIN:1GT49LEY8RF467913 \n" 
+        "⚓Ramps: Mega Ramps \n"
         "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Stas"
+        "🅱 Owner: Owner Operator"
+    ),
+    "Водитель (Said) MAGOMEDSAID GABIBULAEV": (
+        "📌 Driver Name: MAGOMEDSAID GABIBULAEV \n"
+        "📞 Phone Number: 305-391-1839 \n"
+        "🚛 Truck Number: 6 \n"
+        "🚂 Trailer Number: 6 \n"
+        "🔑 VIN:3C63RRGL0RG183858 \n" 
+        "⚓Ramps: 12ft \n"
+        "⚖ Weight: 8500lb \n"
+        "🅱 Owner: Ruslan"
     ),
     "Водитель MARIN GULIA": (
         "📌 Driver Name: MARIN GULIA \n"
         "📞 Phone Number: 916-912-7398 \n"
-        "🚛 Truck Number: 26 \n"
-        "🚂 Trailer Number: 26 \n"
-        "🔑 VIN:1GT49LEY8RF467913 \n" 
+        "🚛 Truck Number: 42 \n"
+        "🚂 Trailer Number: 42 \n"
+        "🔑 VIN:1GT4USEY5SF221416 \n" 
         "⚓Ramps: Mega Ramps \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Owner Operator"
@@ -321,7 +331,7 @@ drivers_info = {
         "⚖ Weight: 8680lb \n"
         "🅱 Owner: Owner Operator"
     ),
-        "Водитель DIONISIE COTOVICI": (
+    "Водитель DIONISIE COTOVICI": (
         "📌 Driver Name: DIONISIE COTOVICI \n"
         "📞 Phone Number: 754-271-3481 \n"
         "🚛 Truck Number: 12 \n"
@@ -331,7 +341,7 @@ drivers_info = {
         "⚖ Weight: lb \n"
         "🅱 Owner: "
     ),
-        "Водитель AZAT BORONCHIEV": (
+    "Водитель AZAT BORONCHIEV": (
         "📌 Driver Name: AZAT BORONCHIEV \n"
         "📞 Phone Number: 929-675-5110 \n"
         "🚛 Truck Number: 14 \n"
@@ -391,15 +401,15 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель (Said) MAGOMEDSAID GABIBULAEV": (
-        "📌 Driver Name: MAGOMEDSAID GABIBULAEV \n"
-        "📞 Phone Number: 305-391-1839 \n"
-        "🚛 Truck Number: 6 \n"
-        "🚂 Trailer Number: 6 \n"
-        "🔑 VIN:3C63RRGL0RG183858 \n" 
-        "⚓Ramps: 12ft \n"
-        "⚖ Weight: 8500lb \n"
-        "🅱 Owner: Ruslan"
+    "Водитель MIRBEK ALOEV": (
+        "📌 Driver Name: MIRBEK ALOEV \n"
+        "📞 Phone Number: 916-767-6753 \n"
+        "🚛 Truck Number: 32 \n"
+        "🚂 Trailer Number: 32 \n"
+        "🔑 VIN:3C63RRHL2RG289436 \n" 
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 9500lb \n"
+        "🅱 Owner: Stas"
     ),
     "Водитель (DOS) DASTAN MASYLKANOV": (
         "📌 Driver Name: DASTAN MASYLKANOV \n"
