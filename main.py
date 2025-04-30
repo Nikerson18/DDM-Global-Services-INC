@@ -444,11 +444,11 @@ drivers_info = {
     "Водитель GREENGRAYLINE Ivan": (
         "📌 Driver Name: Ivan \n"
         "📞 Phone Number: 347-845-5604 \n"
-        "🚛 Truck Number:  \n"
-        "🚂 Trailer Number:  \n"
-        "🔑 VIN: \n" 
+        "🚛 Truck Number: 333 \n"
+        "🚂 Trailer Number: 927 \n"
+        "🔑 VIN:3AKJHHDR2SSWH0860 \n" 
         "⚓Ramps: 16ft \n"
-        "⚖ Weight:  \n"
+        "⚖ Weight: 45000lb \n"
         "🅱 Owner: Ruslan 804-405-7438"        
     ),
     "Водитель MIM Logistics INC VALENTIN NEIZHKO": (
