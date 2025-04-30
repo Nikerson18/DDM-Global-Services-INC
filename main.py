@@ -339,7 +339,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL6RG341392 \n" 
         "⚓Ramps: ft \n"
         "⚖ Weight: lb \n"
-        "🅱 Owner: "
+        "🅱 Owner: Dumitru Ou"
     ),
     "Водитель AZAT BORONCHIEV": (
         "📌 Driver Name: AZAT BORONCHIEV \n"
@@ -369,7 +369,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL6RG289522 \n" 
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9600lb \n"
-        "🅱 Owner: Gheorghe Balica"
+        "🅱 Owner: Kiril"
     ),
     "Водитель IGOR BALAKIN": (
         "📌 Driver Name: IGOR BALAKIN \n"
@@ -399,7 +399,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL2RG358187 \n" 
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 8800lb \n"
-        "🅱 Owner: "
+        "🅱 Owner: Radu"
     ),
     "Водитель ERDEM DORZHIEV": (
         "📌 Driver Name: ERDEM DORZHIEV \n"
@@ -450,6 +450,26 @@ drivers_info = {
         "⚓Ramps: 16ft \n"
         "⚖ Weight:  \n"
         "🅱 Owner: Ruslan 804-405-7438"        
+    ),
+    "Водитель MIM Logistics INC VALENTIN NEIZHKO": (
+        "📌 Driver Name: VALENTIN NEIZHKO \n"
+        "📞 Phone Number: 331-271-7110 \n"
+        "🚛 Truck Number: 40 \n"
+        "🚂 Trailer Number: 40 \n"
+        "🔑 VIN:3C63RRHL4JG201345 \n" 
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 9000lb \n"
+        "🅱 Owner: Owner Operator"        
+    ),
+    "Водитель SRV Trust Way INC GEORGII DZOTOV": (
+        "📌 Driver Name: GEORGII DZOTOV \n"
+        "📞 Phone Number: 925-440-1503 \n"
+        "🚛 Truck Number: 35 \n"
+        "🚂 Trailer Number: 35 \n"
+        "🔑 VIN:3C63RRGL0NG356465 \n" 
+        "⚓Ramps: n/a \n"
+        "⚖ Weight: 9500lb \n"
+        "🅱 Owner: Stas"        
     ),
 }
 # URL для фотографий и файлов
