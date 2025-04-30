@@ -60,13 +60,13 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель SRV Uruzmag Tsakoev", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель SRV URUZMAG TSAKOEV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель MIRCEA VITION", "Водитель GRIGORII MOSKALETS", "Водитель SERHII HONCHARENKO"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII"],
-    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE Ivan", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE IVAN", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
 
@@ -121,8 +121,8 @@ drivers_info = {
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель SRV Uruzmag Tsakoev": (
-        "📌 Driver Name: SRV Uruzmag Tsakoev \n"
+    "Водитель SRV URUZMAG TSAKOEV": (
+        "📌 Driver Name: URUZMAG TSAKOEV \n"
         "📞 Phone Number: 224-284-9071 \n"
         "🚛 Truck Number:  \n"
         "🚂 Trailer Number:  \n"
@@ -441,7 +441,7 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель GREENGRAYLINE Ivan": (
+    "Водитель GREENGRAYLINE IVAN": (
         "📌 Driver Name: Ivan \n"
         "📞 Phone Number: 347-845-5604 \n"
         "🚛 Truck Number: 333 \n"
@@ -475,148 +475,172 @@ drivers_info = {
 # URL для фотографий и файлов
 drivers_files = {
     "Водитель RAMIL KHAFIZOV": {
-        "photo": "https://drive.google.com/file/d/1RebRt_fdyY9zFgDbNq43MmsYOi5t9G5p/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1bzdQIFsOilY8eHuA4x7gq3xgKAaqoBLa/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель OLEH SEMENENNKO": {
-        "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1BypkUML2-13yC_1zhopir5MakM16y2Z1/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель OLEG RESHAEV": {
-        "photo": "https://drive.google.com/file/d/1DHJ2H1BlcwDFzCdTkC2-4gPSSgn3eePE/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Jog2P7ssILevyBMUeOOQEapT2pwxexGD/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель MUKHAMED ADZHIEV": {
-        "photo": "https://drive.google.com/file/d/1WQb3XId7N5Ofwzc3mcDZ2JIpSDhvm2Lo/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1F8zgKUpT6KW4dEd1O9viAAOdVBUi2oHr/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель ALEKSEI LAMATKHANOV": {
-        "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
-    "Водитель SRV Uruzmag Tsakoev": {
-        "photo": "https://drive.google.com/file/d/1fa58slTENamCbpZ4hUMeJhtVIXsXJJjk/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1N3IdZjiMWHZDRCIJK21cNSUM2PlKTOUT/view?usp=drive_link"
+    "Водитель SRV URUZMAG TSAKOEV": {
+        "photo": "",
+        "files": ""
     },
     "Водитель INAL VALIEV": {
-        "photo": "https://drive.google.com/file/d/1Vz86bB-jcE0OAjrWxkMgqV-zEIYIKLXy/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Zjrs0cPAl9p2z8BfLb150pxOm-FgLZkQ/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель ALEKSANDR PAVLOV": {
-        "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/11Opx2TN6ScaJ31YjHyB1IQ6ktOq26KM9/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель BAIR DABAIN": {
-        "photo": "https://drive.google.com/file/d/1EiLW7-ITrIKjqefHMU1MtHBTwFM-V7yG/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1qoV0MKrI3dycrH8eKHn1wy6MSalNgErn/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель VITALII HONCHAROV": {
-        "photo": "https://drive.google.com/file/d/1CsUw9bnJflnnpGFcEg4GWnb_4pZGwSYF/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1CsUw9bnJflnnpGFcEg4GWnb_4pZGwSYF/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель MIRCEA VITION": {
-        "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1OoSZcQYjrCdtpoFk3H8CxUEdkOYYvWYC/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель GRIGORII MOSKALETS": {
-        "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link"
-    },
-    "Водитель VITALII HONCHAROV": {
-        "photo": "https://drive.google.com/file/d/1hUtSdZNcEMa__yG1kPCbFNUcNpgOAvIU/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель SERHII HONCHARENKO": {
-        "photo": "https://drive.google.com/file/d/14CpboA9pYKyLWuxijf9gD6Ok7nDaGTIW/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1o5hiNiTsmXdxvH3_FuAZUEkPzZMGjbAr/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель DARMAN ORUZBAEV": {
-        "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1ejFCxUWMC3WylWhZ8s3NbITVfgHriocd/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель TOTRAZ ABAEV": {
-        "photo": "https://drive.google.com/file/d/1ymKwY80eRZziGw8svzLw3ZSsLC4QorcX/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1b4fse7ttFAvzwqhy83lu_GtCkcoMQhff/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель YERKEBULAN BOSHAIBEKOV": {
-        "photo": "https://drive.google.com/file/d/1mG7YPuGRjU8cFrKPxNW-1gw2-3AwQYoe/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/17oYiD-eOkhHIC9mwAsbXeNvehgJfkWmn/view?usp=drive_link"
-    },
-    "Водитель MIRBEK ALOEV": {
-        "photo": "https://drive.google.com/file/d/138kYd20Lv1KJsTKfLKE1BgncdPbt3drV/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1NYUXFrUXf9DUVk3CRTMQnOS1-OodsI2f/view?usp=drive_link"
-    },
-    "Водитель MARIN GULIA": {
-        "photo": "https://drive.google.com/file/d/1gNGy-qOQQUd7W_DljwzbOBiEM473il1e/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1ykhC1lIoNk7UM3zjJqCUFLWVsOey5oMR/view?usp=drive_link"
-    },
-    "Водитель ALBERT ABAIKHANOV": {
-        "photo": "https://drive.google.com/file/d/10D25opmpC3DDgeWYPri8HzHUQfAs3dU9/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/17M0f3cTycjjtptvjXz119oIkHNd2-DPN/view?usp=drive_link"
-    },
-    "Водитель MIM Logistics INC Anvar": {
-        "photo": "https://drive.google.com/file/d/1rNpG4XpHUSImDMUwMVmTsIRmY8a1_WJ_/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1jDhOocC4s0d1ZaW863WQcTbHm_3Zehig/view?usp=drive_link"
-    },
-    "Водитель ILLIA HORBATOK": {
-        "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link"
-    },
-    "Водитель MIM Logistics INC Rustam Tambiev": {
-        "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link"        
-    },
-    "Водитель TSYDEN TOBODORZHIEV": {
-        "photo": "https://drive.google.com/file/d/15JGHtHuNOrznk-te8uDWRDkhEvVH5OOd/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1NNJM7lmtpRnh82ICh92xNXHzmr4LGBI4/view?usp=drive_link"
-    },
-    "Водитель VIKTOR ATANOV": {
-        "photo": "https://drive.google.com/file/d/1s1WgBRsMU0Q1roF8OxZsNFBmP8wokmfU/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1GwhxpNl9IHvaNHnIZWiFVQEx2JP2rT9i/view?usp=drive_link"
-    },
-    "Водитель DIONISIE COTOVICI": {
-        "photo": "https://drive.google.com/file/d/1BKMmmiGdM7gm0FnRz2fX2HgIMVlgrJBx/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1BKMmmiGdM7gm0FnRz2fX2HgIMVlgrJBx/view?usp=drive_link"
-    },
-    "Водитель AZAT AZAMAT": {
-        "photo": "https://drive.google.com/file/d/1HyPI1o5c2aMv2PO6R_yE-0xV94D3Q8AO/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1iOLgUSvrvYj0mrB6o5t9Xtq0GTGO-9c2/view?usp=drive_link"
-    },
-    "Водитель GEORGII RIONELI": {
-        "photo": "https://drive.google.com/file/d/1gi0RkYOlGyH_TSgs0MhTATcNsaamiyJD/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1WDlAlIKCRofH0N1Z-Z8N2qNfgaO1FpsK/view?usp=drive_link"
-    },
-    "Водитель DENIS COLESNICENCO": {
-        "photo": "https://drive.google.com/file/d/17kdgaxVAGn6dypn-5azbIsoY6Eu1TXcm/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1OkH_O_LOSUAbOvV1F85sxwJfJpomSowJ/view?usp=drive_link"
-    },
-    "Водитель IGOR BALAKIN": {
-        "photo": "https://drive.google.com/file/d/1InjrQgybbfXYM8cqiEcIAXV2h_dgmgSz/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1VLB3ADySVYgLBm3DGv-utG8xEuHj1Vcv/view?usp=drive_link"
-    },
-    "Водитель TAULAN TOTORKULOV": {
-        "photo": "https://drive.google.com/file/d/1hrVycBVGxxXq9-aNZWfW40hk93F82_mw/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1m0kguCz7qe3-kyB_Qi_NyCNUTgh5ACYU/view?usp=drive_link"
-    },
-    "Водитель ERDEM DORZHIEV": {
-        "photo": "https://drive.google.com/file/d/1-xI2Xysnd19jiFp65Fwu4XenVHKjbAut/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1b3_h2Rk-6_YL2ccvdnojRCTbpemDZ2Ce/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель (Said) MAGOMEDSAID GABIBULAEV": {
-        "photo": "https://drive.google.com/file/d/1qVDUgjKnkq5iCG7EHZdl_72xR08jgpWL/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1lft69iT2fdtwZLN3whhknZWuTIYVT5K7/view?usp=drive_link"
+        "photo": "",
+        "files": ""
+    },
+    "Водитель YAROSLAV PANEVNYK": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель MARIN GULIA": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель ALBERT ABAIKHANOV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель MIM Logistics INC Anvar": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель ILLIA HORBATOK": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель MIM Logistics INC ANVAR BIDZHIEV": {
+        "photo": "",
+        "files": ""        
+    },
+    "Водитель ILLIA HORBATOK": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель MIM Logistics INC RUSTAM TAMBIEV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель TSYDEN TOBODORZHIEV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель VIKTOR ATANOV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель AZAT AZAMAT": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель DIONISIE COTOVICI": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель AZAT BORONCHIEV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель GEORGII RIONELI": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель DENIS COLESNICENCO": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель IGOR BALAKIN": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель TAULAN TOTORKULOV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель EVGENY SYROMITSKII": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель ERDEM DORZHIEV": {
+        "photo": "",
+        "files": ""
+    },
+    "Водитель MIRBEK ALOEV": {
+        "photo": "",
+        "files": ""
     },
     "Водитель (DOS) DASTAN MASYLKANOV": {
-        "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1eMQhFKn0X5NDe0DmDl6pPQDK1VWpOo3a/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
     "Водитель SOSLAN GAGLOEV": {
-        "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1vs1lmsH4MqphrU5p_GenEtTPQ2PwPXxR/view?usp=drive_link"
+        "photo": "",
+        "files": ""
     },
-    "Водитель GREENGRAYLINE Ivan": {
-        "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1vs1lmsH4MqphrU5p_GenEtTPQ2PwPXxR/view?usp=drive_link"        
+    "Водитель GREENGRAYLINE IVAN": {
+        "photo": "",
+        "files": ""        
+    },
+    "Водитель MIM Logistics INC VALENTIN NEIZHKO": {
+        "photo": "",
+        "files": "h"        
+    },
+    "Водитель SRV Trust Way INC GEORGII DZOTOV": {
+        "photo": "",
+        "files": ""        
     },
 }
 
