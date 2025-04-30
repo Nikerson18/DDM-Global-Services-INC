@@ -61,12 +61,12 @@ def main_menu():
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель BAIR DABAIN", "Водитель SRV Uruzmag Tsakoev", "Водитель ALEKSANDR PAVLOV", "Водитель INAL VALIEV"],
-    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель SERGHEI CIOBANU", "Водитель SERHII HONCHARENKO", "Водитель GRIGORII MOSKALETS"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA", "Водитель MIRBEK ALOEV"],
-    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC Rustam Tambiev"],
-    "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI"],
+    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель MIRCEA VITION", "Водитель SERHII HONCHARENKO", "Водитель GRIGORII MOSKALETS"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YAROSLAV PANEVNYK"],
+    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC Anvar", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
+    "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV"],
-    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE Ivan"]
+    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE Ivan", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
 
@@ -171,9 +171,9 @@ drivers_info = {
         "⚖ Weight: 9620lb \n"
         "🅱 Owner: "
     ),
-    "Водитель SERGHEI CIOBANU": (
-        "📌 Driver Name: SERGHEI CIOBANU \n"
-        "📞 Phone Number: 224-343-1680 \n"
+    "Водитель MIRCEA VITION": (
+        "📌 Driver Name: MIRCEA VITION \n"
+        "📞 Phone Number: 331-444-4967 \n"
         "🚛 Truck Number: 28 \n"
         "🚂 Trailer Number: 28 \n"
         "🔑 VIN:3C63RRHL5RG337088 \n" 
@@ -331,6 +331,16 @@ drivers_info = {
         "⚖ Weight: lb \n"
         "🅱 Owner: "
     ),
+        "Водитель AZAT BORONCHIEV": (
+        "📌 Driver Name: AZAT BORONCHIEV \n"
+        "📞 Phone Number: 929-675-5110 \n"
+        "🚛 Truck Number: 14 \n"
+        "🚂 Trailer Number: 14 \n"
+        "🔑 VIN: 3C63R3HL7RG339129\n" 
+        "⚓Ramps: ft \n"
+        "⚖ Weight: 8500lb \n"
+        "🅱 Owner: "        
+    ),
     "Водитель GEORGII RIONELI": (
         "📌 Driver Name: GEORGII RIONELI \n"
         "📞 Phone Number: 925-440-1503 \n"
@@ -464,7 +474,7 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1CsUw9bnJflnnpGFcEg4GWnb_4pZGwSYF/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1CsUw9bnJflnnpGFcEg4GWnb_4pZGwSYF/view?usp=drive_link"
     },
-    "Водитель SERGHEI CIOBANU": {
+    "Водитель MIRCEA VITION": {
         "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1OoSZcQYjrCdtpoFk3H8CxUEdkOYYvWYC/view?usp=drive_link"
     },
