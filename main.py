@@ -186,7 +186,7 @@ drivers_info = {
         "📞 Phone Number: 754-284-6442 \n"
         "🚛 Truck Number: 15 \n"
         "🚂 Trailer Number: 15 \n"
-        "🔑 VIN:3C63RRHL2RG341423 \n" 
+        "🔑 VIN:3C63RRHL0RG280427 \n" 
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9220lb \n"
         "🅱 Owner: Dumitru OU"
@@ -520,7 +520,7 @@ drivers_files = {
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1R-7_hXIvAOXpUIJOUEBXmjFDTAv3tplo/view?usp=drive_link"
     },
     "Водитель SERHII HONCHARENKO": {
         "photo": "https://drive.google.com/file/d/14CpboA9pYKyLWuxijf9gD6Ok7nDaGTIW/view?usp=drive_link",
