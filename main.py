@@ -463,10 +463,10 @@ drivers_info = {
     ),
     "Водитель SRV Trust Way INC GEORGII DZOTOV": (
         "📌 Driver Name: GEORGII DZOTOV \n"
-        "📞 Phone Number: 925-440-1503 \n"
-        "🚛 Truck Number: 35 \n"
-        "🚂 Trailer Number: 35 \n"
-        "🔑 VIN:3C63RRGL0NG356465 \n" 
+        "📞 Phone Number: 224-284-4234 \n"
+        "🚛 Truck Number: 45 \n"
+        "🚂 Trailer Number: 45 \n"
+        "🔑 VIN: \n" 
         "⚓Ramps: n/a \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"        
