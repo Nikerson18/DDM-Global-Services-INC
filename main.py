@@ -274,8 +274,8 @@ drivers_info = {
     "Водитель MIM Logistics INC ANVAR BIDZHIEV": (
         "📌 Driver Name: ANVAR BIDZHIEV \n"
         "📞 Phone Number: 224-422-3658 \n"
-        "🚛 Truck Number: 43 \n"
-        "🚂 Trailer Number: 43 \n"
+        "🚛 Truck Number: 03 \n"
+        "🚂 Trailer Number: 03 \n"
         "🔑 VIN:1FT8W3DT5NEG00613 \n" 
         "⚓Ramps: n/a \n"
         "⚖ Weight: 9000lb \n"
