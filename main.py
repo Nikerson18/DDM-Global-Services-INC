@@ -473,11 +473,7 @@ drivers_info = {
     ),
     "Водитель YEVHENII MATVIEIEV": (
         "📌 Driver Name: YEVHENII MATVIEIEV \n"
-        "📞 Phone Number: 
-
-
-689-233-2513
- \n"
+        "📞 Phone Number: 689-233-2513 \n"
         "🚛 Truck Number: 31 \n"
         "🚂 Trailer Number: 31 \n"
         "🔑 VIN: 3C63RRJLXNG152569 \n"
