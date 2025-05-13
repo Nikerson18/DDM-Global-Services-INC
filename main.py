@@ -471,6 +471,20 @@ drivers_info = {
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"        
     ),
+    "Водитель YEVHENII MATVIEIEV": (
+        "📌 Driver Name: YEVHENII MATVIEIEV \n"
+        "📞 Phone Number: 
+
+
+689-233-2513
+ \n"
+        "🚛 Truck Number: 31 \n"
+        "🚂 Trailer Number: 31 \n"
+        "🔑 VIN: 3C63RRJLXNG152569 \n"
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 9000lb \n"
+        "🅱 Owner: Radu"
+    ),
 }
 # URL для фотографий и файлов
 drivers_files = {
@@ -634,6 +648,10 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1BU52Ri3tOMsRj22Wm02-hFocrNc8vfFJ/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1X8D66asKoBZuSJo5b5KAvVPH_6AFeHn-/view?usp=drive_link"        
     },
+    "Водитель YEVHENII MATVIEIEV": {
+        "photo": "https://drive.google.com/file/d/1rgQXXKL_HpxpajtrwtumXBREjQUwKTX4/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/159qThglnM__npOf28XPXvRHUdLSCNc1P/view?usp=drive_link"
+    },
 }
 
 async def show_dispatchers(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -715,3 +733,4 @@ app.add_handler(CallbackQueryHandler(button_handler))
 if __name__ == "__main__":
     print("Бот запущен...")
     app.run_polling()
+
