@@ -66,7 +66,7 @@ dispatchers = {
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII"],
-    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "✈ Диспетчер Max": ["Водитель ERDEM DORZHIEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV", "Водитель YEVHENII MATVIEIEV"]
 
 }
 
