@@ -343,7 +343,7 @@ drivers_info = {
     ),
     "Водитель AZAT BORONCHIEV": (
         "📌 Driver Name: AZAT BORONCHIEV \n"
-        "📞 Phone Number: 929-675-5110 \n"
+        "📞 Phone Number: 929-627-1722 \n"
         "🚛 Truck Number: 14 \n"
         "🚂 Trailer Number: 14 \n"
         "🔑 VIN: 3C63R3HL7RG339129\n" 
