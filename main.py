@@ -466,7 +466,7 @@ drivers_info = {
         "📞 Phone Number: 224-284-4234 \n"
         "🚛 Truck Number: 45 \n"
         "🚂 Trailer Number: 45 \n"
-        "🔑 VIN: \n" 
+        "🔑 VIN:3C63RRGL1RG416890 \n" 
         "⚓Ramps: n/a \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"        
