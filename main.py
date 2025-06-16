@@ -59,14 +59,15 @@ def main_menu():
 
 # Данные (пока вручную)
 dispatchers = {
-    "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель MUKHAMED ADZHIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель SRV URUZMAG TSAKOEV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
-    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель MIRCEA VITION", "Водитель GRIGORII MOSKALETS", "Водитель SERHII HONCHARENKO", "Водитель YEVHENII MATVIEIEV"],
+    "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
+    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
-    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель ILLIA HORBATOK", "Водитель MIM Logistics INC RUSTAM TAMBIEV"],
+    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII"],
-    "✈ Диспетчер Max": ["Водитель (DOS) DASTAN MASYLKANOV", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель MIRBEK ALOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
+    "✈ Диспетчер Max": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель SOSLAN GAGLOEV", "Водитель MIRBEK ALOEV"],
+    "🎈 Диспетчер NONE": ["Водитель MIRCEA VITION", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
 
@@ -291,7 +292,7 @@ drivers_info = {
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex"
      ),
-    "Водитель MIM Logistics INC RUSTAM TAMBIEV": (
+    "Водитель RUSTAM TAMBIEV": (
         "📌 Driver Name: RUSTAM TAMBIEV \n"
         "📞 Phone Number: 224-443-3233 \n"
         "🚛 Truck Number: 41 \n"
@@ -572,7 +573,7 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link"
     },
-    "Водитель MIM Logistics INC RUSTAM TAMBIEV": {
+    "Водитель RUSTAM TAMBIEV": {
         "photo": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link"
     },
