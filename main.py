@@ -60,14 +60,14 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
-    "✈ Диспетчер Max": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель SOSLAN GAGLOEV", "Водитель MIRBEK ALOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN"],
-    "🎈 Диспетчер NONE": ["Водитель MIRCEA VITION", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MIRBEK ALOEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
+    "🎈 Диспетчер NONE": ["Водитель MIRCEA VITION", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
 
@@ -452,6 +452,16 @@ drivers_info = {
         "⚖ Weight: 45000lb \n"
         "🅱 Owner: Ruslan 804-405-7438"        
     ),
+    "Водитель GREENGRAYLINE KALCHUK GRYGORII": (
+        "📌 Driver Name: KALCHUK GRYGORII \n"
+        "📞 Phone Number: 872-240-7229 \n"
+        "🚛 Truck Number: 29 \n"
+        "🚂 Trailer Number: 29 \n"
+        "🔑 VIN:3AKJHHDR0TSWL2968 \n" 
+        "⚓Ramps: 16ft \n"
+        "⚖ Weight: 45000lb \n"
+        "🅱 Owner: Owner Mihail 267-997-8913"        
+    ),
     "Водитель MIM Logistics INC VALENTIN NEIZHKO": (
         "📌 Driver Name: VALENTIN NEIZHKO \n"
         "📞 Phone Number: 331-271-7110 \n"
@@ -636,6 +646,10 @@ drivers_files = {
     "Водитель GREENGRAYLINE SHALIMOV IVAN": {
         "photo": "https://drive.google.com/file/d/1odDV94XYFwtdTNmDcAyqxEH_E-rSyQGR/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1YAOqn90HQX8N7lhnmkFUiqjF5Zm0KrCz/view?usp=drive_link"        
+    },
+    "Водитель GREENGRAYLINE KALCHUK GRYGORII": {
+        "photo": "https://drive.google.com/file/d/1tdYfeeDdw4xcvt9v3zp1irOUSbeJPbWo/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1-fH8II7dtc9cFbFjol30K213XtxWw1zg/view?usp=drive_link"        
     },
     "Водитель MIM Logistics INC VALENTIN NEIZHKO": {
         "photo": "https://drive.google.com/file/d/1EaKXoCfbpe3rpTKVgAHTk2ojwI-NGZDr/view?usp=drive_link",
