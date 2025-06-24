@@ -60,7 +60,7 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
@@ -141,6 +141,16 @@ drivers_info = {
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
+    ),
+    "Водитель BILIKTO LAMATKHANOV": (
+        "📌 Driver Name: BILIKTO LAMATKHANOV \n"
+        "📞 Phone Number: 224-716-4847 \n"
+        "🚛 Truck Number: 21 \n"
+        "🚂 Trailer Number: 21 \n"
+        "🔑 VIN:3C63RRGL3RG109933 \n" 
+        "⚓Ramps: 8ft \n"
+        "⚖ Weight: 9000lb \n"
+        "🅱 Owner: Company"
     ),
     "Водитель ALEKSANDR PAVLOV": (
         "📌 Driver Name: ALEKSANDR PAVLOV \n"
@@ -510,6 +520,10 @@ drivers_files = {
     "Водитель MUKHAMED ADZHIEV": {
         "photo": "https://drive.google.com/file/d/1WQb3XId7N5Ofwzc3mcDZ2JIpSDhvm2Lo/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link"
+    },
+    "Водитель BILIKTO LAMATKHANOV": {
+        "photo": "https://drive.google.com/file/d/1iAjETTrVD9vGrDCFKzKxSlTTLqTzGGw7/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1mGZk0yIansjtMHwbDUVwDf6muQcy4u7E/view?usp=drive_link"
     },
     "Водитель ALEKSEI LAMATKHANOV": {
         "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
