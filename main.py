@@ -60,7 +60,7 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель INAL VALIEV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
@@ -132,15 +132,15 @@ drivers_info = {
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"
     ),
-    "Водитель INAL VALIEV": (
-        "📌 Driver Name: INAL VALIEV \n"
-        "📞 Phone Number: 708-969-9882 \n"
-        "🚛 Truck Number: 24 \n"
-        "🚂 Trailer Number: 24 \n"
-        "🔑 VIN:3C63RRHL4RG289664 \n" 
+    "Водитель LATIPOV PARVIZ": (
+        "📌 Driver Name: LATIPOV PARVIZ \n"
+        "📞 Phone Number: 267-574-4243 \n"
+        "🚛 Truck Number: 31 \n"
+        "🚂 Trailer Number: 31 \n"
+        "🔑 VIN:3C63RRJLLXNG152569 \n" 
         "⚓Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель ALEKSANDR PAVLOV": (
         "📌 Driver Name: ALEKSANDR PAVLOV \n"
@@ -519,9 +519,9 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1EwNJ1SbDCL-ivNs7xAHGczTAsCsDara4/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1SaOVT-NEnEpBCXDgIF2lcceIROyb1dz7/view?usp=drive_link"
     },
-    "Водитель INAL VALIEV": {
-        "photo": "https://drive.google.com/file/d/1Vz86bB-jcE0OAjrWxkMgqV-zEIYIKLXy/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Zjrs0cPAl9p2z8BfLb150pxOm-FgLZkQ/view?usp=sharing"
+    "Водитель LATIPOV PARVIZ": {
+        "photo": "https://drive.google.com/file/d/1xdc15lyPYEd-rTVWjq5wlun3U2Xoi6Nn/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1ZDXRZhdWKx1yZodyt_eVKtl4x7RnCe0-/view?usp=drive_link"
     },
     "Водитель ALEKSANDR PAVLOV": {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
