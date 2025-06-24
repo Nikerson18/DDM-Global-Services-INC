@@ -61,13 +61,13 @@ def main_menu():
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
-    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS"],
+    "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS", "Водитель RUSTAM TAMBIEV", "Водитель "],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
     "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MIRBEK ALOEV"],
-    "🎈 Диспетчер NONE": ["Водитель MIRCEA VITION", "Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "🎈 Диспетчер NONE": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 
 }
 
@@ -182,17 +182,27 @@ drivers_info = {
         "⚖ Weight: 9620lb \n"
         "🅱 Owner: "
     ),
-    "Водитель MIRCEA VITION": (
-        "📌 Driver Name: MIRCEA VITION \n"
-        "📞 Phone Number: 331-444-4967 \n"
+    "Водитель RUSTAM TAMBIEV": (
+        "📌 Driver Name: RUSTAM TAMBIEV \n"
+        "📞 Phone Number: 224-443-3233 \n"
+        "🚛 Truck Number: 41 \n"
+        "🚂 Trailer Number: 41 \n"
+        "🔑 VIN:1FT8W3DT7PEC16514 \n" 
+        "⚓Ramps: Mega Ramps \n"
+        "⚖ Weight: 9620lb \n"
+        "🅱 Owner: NAZAR "
+    ),
+    "Водитель IHOR KIRSHAK": (
+        "📌 Driver Name: IHOR KIRSHAK \n"
+        "📞 Phone Number: 929-786-5509 \n"
         "🚛 Truck Number: 28 \n"
         "🚂 Trailer Number: 28 \n"
         "🔑 VIN:3C63RRHL5RG337088 \n" 
         "⚓Ramps: 14ft \n"
         "⚖ Weight: 9220lb \n"
-        "🅱 Owner: Dumitru OU"
-    ),
-        "Водитель GRIGORII MOSKALETS": (
+        "🅱 Owner: Owner Operator"
+    ),   
+    "Водитель GRIGORII MOSKALETS": (
         "📌 Driver Name: GRIGORII MOSKALETS \n"
         "📞 Phone Number: 754-284-6442 \n"
         "🚛 Truck Number: 15 \n"
@@ -549,9 +559,13 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1hUtSdZNcEMa__yG1kPCbFNUcNpgOAvIU/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link"
     },
-    "Водитель MIRCEA VITION": {
-        "photo": "https://drive.google.com/file/d/1aHBI9qFvJ4J8pVulx3-9tB9t9u9NOjGV/view?usp=drive_link",
+    "Водитель IHOR KIRSHAK": {
+        "photo": "https://drive.google.com/file/d/15ZKnXzvDmfuwj_02swAd9nHmuJQW5kbB/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1OoSZcQYjrCdtpoFk3H8CxUEdkOYYvWYC/view?usp=drive_link"
+    },
+    "Водитель RUSTAM TAMBIEV": {
+        "photo": "https://drive.google.com/file/d/1D0thrbgcIYfKIWF7ScDydKwdsPH3imGV/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1fKweFaG7mYN1HxQNTlghmoVqT-QkfeIY/view?usp=drive_link"
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
