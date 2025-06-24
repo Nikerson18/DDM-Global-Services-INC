@@ -457,7 +457,7 @@ drivers_info = {
         "📞 Phone Number: 872-240-7229 \n"
         "🚛 Truck Number: 29 \n"
         "🚂 Trailer Number: 29 \n"
-        "🔑 VIN:3AKJHHDR0TSWL2968 \n" 
+        "🔑 VIN: 3AKJHHDR0TSWL2968 \n" 
         "⚓Ramps: 16ft \n"
         "⚖ Weight: 45000lb \n"
         "🅱 Owner: Owner Mihail 267-997-8913"        
