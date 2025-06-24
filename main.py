@@ -60,9 +60,9 @@ def main_menu():
 # Данные (пока вручную)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель GREENGRAYLINE KALCHUK GRYGORII"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель GREENGREYLINE KALCHUK GRYGORII"],
     "🚌 Диспетчер Serghei": ["Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS", "Водитель RUSTAM TAMBIEV", "Водитель IHOR KIRSHAK"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель GREENGRAYLINE SHALIMOV IVAN", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель GREENGREYLINE SHALIMOV IVAN", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель YAROSLAV PANEVNYK", "Водитель MARIN GULIA"],
     "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель MUKHAMED ADZHIEV"],
     "🚂 Диспетчер Peter": ["Водитель TSYDEN TOBODORZHIEV", "Водитель VIKTOR ATANOV", "Водитель AZAT AZAMAT", "Водитель DIONISIE COTOVICI", "Водитель AZAT BORONCHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
@@ -462,7 +462,7 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель GREENGRAYLINE SHALIMOV IVAN": (
+    "Водитель GREENGREYLINE SHALIMOV IVAN": (
         "📌 Driver Name: SHALIMOV IVAN \n"
         "📞 Phone Number: 347-845-5604 \n"
         "🚛 Truck Number: 333 \n"
@@ -472,7 +472,7 @@ drivers_info = {
         "⚖ Weight: 45000lb \n"
         "🅱 Owner: Ruslan 804-405-7438"        
     ),
-    "Водитель GREENGRAYLINE KALCHUK GRYGORII": (
+    "Водитель GREENGREYLINE KALCHUK GRYGORII": (
         "📌 Driver Name: KALCHUK GRYGORII \n"
         "📞 Phone Number: 872-240-7229 \n"
         "🚛 Truck Number: 29 \n"
@@ -671,11 +671,11 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1vs1lmsH4MqphrU5p_GenEtTPQ2PwPXxR/view?usp=sharing"
     },
-    "Водитель GREENGRAYLINE SHALIMOV IVAN": {
+    "Водитель GREENGREYLINE SHALIMOV IVAN": {
         "photo": "https://drive.google.com/file/d/1odDV94XYFwtdTNmDcAyqxEH_E-rSyQGR/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1YAOqn90HQX8N7lhnmkFUiqjF5Zm0KrCz/view?usp=drive_link"        
     },
-    "Водитель GREENGRAYLINE KALCHUK GRYGORII": {
+    "Водитель GREENGREYLINE KALCHUK GRYGORII": {
         "photo": "https://drive.google.com/file/d/1tdYfeeDdw4xcvt9v3zp1irOUSbeJPbWo/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1-fH8II7dtc9cFbFjol30K213XtxWw1zg/view?usp=drive_link"        
     },
