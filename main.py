@@ -10,7 +10,7 @@ async def button_handler(update: Update, context):
         pass
 
 # 🔒 Список разрешённых пользователей (замени ID на реальные)
-ALLOWED_USERS = {5538804267, 1430105405, 485947883, 6932066810, 8026256981, 7275611563, 723670550, 5880565984, 5636776284, 1611992582, 6623251898, 5801420584}  # Замени на свои ID
+ALLOWED_USERS = {209309861}  # Замени на свои ID
 
 # 🔐 Функция проверки доступа
 async def check_access(update: Update) -> bool:
@@ -695,17 +695,10 @@ drivers_files = {
 
 async def show_dispatchers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-
     keyboard = [[InlineKeyboardButton(name, callback_data=name)] for name in dispatchers.keys()]
     keyboard.append([InlineKeyboardButton("⬅️ Назад", callback_data='start')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-
-    try:
-        await query.message.edit_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
-    except telegram.error.BadRequest as e:
-        print(f"[ERROR] Не удалось отредактировать сообщение: {e}")
-        await query.message.reply_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
-
+    await query.message.edit_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
 
 
 async def show_drivers(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -732,23 +725,19 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
 
-    # ⛔ Проверка доступа по нажатию кнопок
-    if not await check_access(update):
-        return
-
-    data = query.data
-    print(f"[DEBUG] Нажата кнопка: {data}")
-
-    if data == 'start':
+    # Переход по различным callback_data
+    if query.data == 'start':
         await start(update, context)
-    elif data == 'dispatchers':
+    elif query.data == 'dispatchers':
         await show_dispatchers(update, context)
-    elif data in dispatchers:
+    elif query.data in dispatchers:
         await show_drivers(update, context)
-    elif data in drivers_info:
+    elif query.data in drivers_info:
         await show_driver_info(update, context)
-    elif data.startswith("photo_"):
-        selected_driver = data.split("_", 1)[1]
+    elif query.data.startswith("photo_"):
+        selected_driver = query.data.split("_")[1]
+
+        # Проверяем, есть ли фото для выбранного водителя
         if selected_driver in drivers_files and "photo" in drivers_files[selected_driver]:
             photo_path = drivers_files[selected_driver]["photo"]
             try:
@@ -757,8 +746,10 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await query.message.reply_text(f"Ошибка при отправке фото: {e}")
         else:
             await query.message.reply_text("Фото не найдено для этого водителя.")
-    elif data.startswith("files_"):
-        selected_driver = data.split("_", 1)[1]
+    elif query.data.startswith("files_"):
+        selected_driver = query.data.split("_")[1]
+
+        # Проверяем, есть ли документ для выбранного водителя
         if selected_driver in drivers_files and "document" in drivers_files[selected_driver]:
             file_path = drivers_files[selected_driver]["document"]
             try:
@@ -767,9 +758,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await query.message.reply_text(f"Ошибка при отправке документа: {e}")
         else:
             await query.message.reply_text("Документы не найдены для этого водителя.")
-    else:
-        await query.message.reply_text("⚠ Неизвестная команда.")
-
 
 
 # Создание приложения
@@ -784,4 +772,3 @@ app.add_handler(CallbackQueryHandler(button_handler))
 if __name__ == "__main__":
     print("Бот запущен...")
     app.run_polling()
-
