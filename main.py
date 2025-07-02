@@ -732,19 +732,23 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
 
-    # Переход по различным callback_data
-    if query.data == 'start':
-        await start(update, context)
-    elif query.data == 'dispatchers':
-        await show_dispatchers(update, context)
-    elif query.data in dispatchers:
-        await show_drivers(update, context)
-    elif query.data in drivers_info:
-        await show_driver_info(update, context)
-    elif query.data.startswith("photo_"):
-        selected_driver = query.data.split("_")[1]
+    # ⛔ Проверка доступа по нажатию кнопок
+    if not await check_access(update):
+        return
 
-        # Проверяем, есть ли фото для выбранного водителя
+    data = query.data
+    print(f"[DEBUG] Нажата кнопка: {data}")
+
+    if data == 'start':
+        await start(update, context)
+    elif data == 'dispatchers':
+        await show_dispatchers(update, context)
+    elif data in dispatchers:
+        await show_drivers(update, context)
+    elif data in drivers_info:
+        await show_driver_info(update, context)
+    elif data.startswith("photo_"):
+        selected_driver = data.split("_", 1)[1]
         if selected_driver in drivers_files and "photo" in drivers_files[selected_driver]:
             photo_path = drivers_files[selected_driver]["photo"]
             try:
@@ -753,10 +757,8 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await query.message.reply_text(f"Ошибка при отправке фото: {e}")
         else:
             await query.message.reply_text("Фото не найдено для этого водителя.")
-    elif query.data.startswith("files_"):
-        selected_driver = query.data.split("_")[1]
-
-        # Проверяем, есть ли документ для выбранного водителя
+    elif data.startswith("files_"):
+        selected_driver = data.split("_", 1)[1]
         if selected_driver in drivers_files and "document" in drivers_files[selected_driver]:
             file_path = drivers_files[selected_driver]["document"]
             try:
@@ -765,6 +767,9 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await query.message.reply_text(f"Ошибка при отправке документа: {e}")
         else:
             await query.message.reply_text("Документы не найдены для этого водителя.")
+    else:
+        await query.message.reply_text("⚠ Неизвестная команда.")
+
 
 
 # Создание приложения
