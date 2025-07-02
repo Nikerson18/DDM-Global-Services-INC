@@ -698,7 +698,7 @@ async def show_dispatchers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton(name, callback_data=name)] for name in dispatchers.keys()]
     keyboard.append([InlineKeyboardButton("⬅️ Назад", callback_data='start')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.message.edit_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
+    await query.message.reply_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
 
 
 async def show_drivers(update: Update, context: ContextTypes.DEFAULT_TYPE):
