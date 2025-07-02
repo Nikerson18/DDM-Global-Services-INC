@@ -1,63 +1,38 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes, CallbackContext
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes
 import telegram.error
 
-async def button_handler(update: Update, context):
-    query = update.callback_query
-    try:
-        await query.answer()
-    except telegram.error.BadRequest:
-        pass
-
 # 🔒 Список разрешённых пользователей (замени ID на реальные)
-ALLOWED_USERS = {5538804267, 1430105405, 485947883, 6932066810, 8026256981, 7275611563, 723670550, 5880565984, 5636776284, 1611992582, 6623251898, 5801420584}  # Замени на свои ID
+ALLOWED_USERS = {5538804267, 1430105405, 485947883, 6932066810, 8026256981,
+                7275611563, 723670550, 5880565984, 5636776284, 1611992582,
+                6623251898, 5801420584}  # Замени на свои ID
 
-# 🔐 Функция проверки доступа
+# 🔐 Функция проверки доступа по ID
 async def check_access(update: Update) -> bool:
     user_id = update.effective_user.id
     if user_id not in ALLOWED_USERS:
+        # В зависимости от типа обновления отправляем сообщение об отказе
         if update.message:
             await update.message.reply_text("🚫 Доступ запрещён. Свяжитесь с администратором.")
         elif update.callback_query:
             await update.callback_query.message.reply_text("🚫 Доступ запрещён.")
         return False
-    return True  # Если пользователь в списке, возвращаем True
+    return True  # Доступ разрешён, если ID пользователя в списке
 
-# 🚀 Функция /start и при определённых словах
-async def start(update: Update, context: CallbackContext):
-    if update.message is None or update.message.text is None:  # Если нет текста, выходим
+# 🚀 Обработчик команды /start
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.message is None or update.message.text is None:
+        return  # Если нет текстового сообщения, выходим (например, callback вызвал start)
+    # Проверяем доступ по ID
+    if not await check_access(update):
         return
+    # Приветствие и главное меню
+    await update.message.reply_text("✅ Доступ разрешён. Добро пожаловать!")
+    keyboard = [[InlineKeyboardButton("👥 Список диспетчеров", callback_data='dispatchers')]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await update.message.reply_text("🚛 Главное меню:", reply_markup=reply_markup)
 
-    text = update.message.text.lower()  # Определяем text сразу
-    trigger_words = ["привет", "hi", "salut", "начать", "старт"]
-
-    # Выводим отладочную информацию
-    print(f"Проверяем текст: {text}")
-
-    if any(word in text.split() for word in trigger_words) or text.startswith("/"):
-        if not await check_access(update):  # Проверяем доступ
-            return  # Если доступа нет, выходим
-
-        await update.message.reply_text("✅ Доступ разрешён. Добро пожаловать!")  # Добавляем сообщение о доступе
-        keyboard = [[InlineKeyboardButton("👥 Список диспетчеров", callback_data='dispatchers')]]
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await update.message.reply_text("🚛 Главное меню:", reply_markup=reply_markup)
-        return  # Выход после отправки меню
-
-        # 🚛 Если триггерные слова не сработали, ищем водителя
-    driver_name = text
-    drivers_info_lower = {key.lower(): value for key, value in drivers_info.items()}
-    info = drivers_info_lower.get(driver_name)
-
-    if info:
-        await update.message.reply_text(info, parse_mode='HTML')
-
-# 🔄 Главное меню (пример)
-def main_menu():
-    keyboard = [[InlineKeyboardButton("📋 Список водителей", callback_data='drivers')]]
-    return InlineKeyboardMarkup(keyboard)
-
-# Данные (пока вручную)
+# Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚛 Диспетчер Andrew": ["Водитель RAMIL KHAFIZOV", "Водитель OLEG RESHAEV", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель RUSTAM TAMBIEV"],
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель LATIPOV PARVIZ", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель GREENGREYLINE KALCHUK GRYGORII"],
@@ -68,7 +43,6 @@ dispatchers = {
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель DENIS COLESNICENCO", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
     "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MIRBEK ALOEV"],
     "🎈 Диспетчер NONE": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
-
 }
 
 drivers_info = {
@@ -77,8 +51,8 @@ drivers_info = {
         "📞 Phone Number: 916-282-8457 \n"
         "🚛 Truck Number: 34 \n"
         "🚂 Trailer Number: 34 \n"
-        "🔑 VIN:3C6UR5KL2FG537458 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:3C6UR5KL2FG537458 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Marin"
     ),
@@ -87,8 +61,8 @@ drivers_info = {
         "📞 Phone Number: 701-971-4705 \n"
         "🚛 Truck Number: 25 \n"
         "🚂 Trailer Number: 25 \n"
-        "🔑 VIN:3C63RRHL2RG307630 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL2RG307630 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Radu"
     ),
@@ -97,8 +71,8 @@ drivers_info = {
         "📞 Phone Number: 279-789-4042 \n"
         "🚛 Truck Number: 23 \n"
         "🚂 Trailer Number: 23 \n"
-        "🔑 VIN:3C63RRHL1RG289668 \n" 
-        "⚓Ramps: 10ft \n"
+        "🔑 VIN:3C63RRHL1RG289668 \n"
+        "⚓ Ramps: 10ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Alex"
     ),
@@ -107,8 +81,8 @@ drivers_info = {
         "📞 Phone Number: 224-474-0482 \n"
         "🚛 Truck Number: 3 \n"
         "🚂 Trailer Number: 3 \n"
-        "🔑 VIN:3C63RRHL8RG307633 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL8RG307633 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
@@ -117,8 +91,8 @@ drivers_info = {
         "📞 Phone Number: 323-219-9464 \n"
         "🚛 Truck Number: 9 \n"
         "🚂 Trailer Number: 9 \n"
-        "🔑 VIN:3C63RRGL2RG112628 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL2RG112628 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -127,8 +101,8 @@ drivers_info = {
         "📞 Phone Number: 224-284-9071 \n"
         "🚛 Truck Number:  \n"
         "🚂 Trailer Number:  \n"
-        "🔑 VIN: \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN: \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"
     ),
@@ -137,8 +111,8 @@ drivers_info = {
         "📞 Phone Number: 267-574-4243 \n"
         "🚛 Truck Number: 31 \n"
         "🚂 Trailer Number: 31 \n"
-        "🔑 VIN:3C63RRJLLXNG152569 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRJLLXNG152569 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -147,8 +121,8 @@ drivers_info = {
         "📞 Phone Number: 224-716-4847 \n"
         "🚛 Truck Number: 21 \n"
         "🚂 Trailer Number: 21 \n"
-        "🔑 VIN:3C63RRGL3RG109933 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL3RG109933 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Company"
     ),
@@ -157,8 +131,8 @@ drivers_info = {
         "📞 Phone Number: 929-721-9669 \n"
         "🚛 Truck Number: 1 \n"
         "🚂 Trailer Number: 1 \n"
-        "🔑 VIN:1GC4KTEY7SF130031 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:1GC4KTEY7SF130031 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -168,7 +142,7 @@ drivers_info = {
         "🚛 Truck Number: 10 \n"
         "🚂 Trailer Number: 10 \n"
         "🔑 VIN:3C63RRGL6RG109909 \n"
-        "⚓Ramps: 8ft \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Alexei Lamatkhanov"
     ),
@@ -177,8 +151,8 @@ drivers_info = {
         "📞 Phone Number: 904-333-2447 \n"
         "🚛 Truck Number: 33 \n"
         "🚂 Trailer Number: 33 \n"
-        "🔑 VIN:3C63RRHL9RG301260 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL9RG301260 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9620lb \n"
         "🅱 Owner: "
     ),
@@ -187,8 +161,8 @@ drivers_info = {
         "📞 Phone Number: 224-443-3233 \n"
         "🚛 Truck Number: 41 \n"
         "🚂 Trailer Number: 41 \n"
-        "🔑 VIN:1FT8W3DT7PEC16514 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:1FT8W3DT7PEC16514 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 9620lb \n"
         "🅱 Owner: NAZAR "
     ),
@@ -197,18 +171,18 @@ drivers_info = {
         "📞 Phone Number: 929-786-5509 \n"
         "🚛 Truck Number: 28 \n"
         "🚂 Trailer Number: 28 \n"
-        "🔑 VIN:3C63RRHL5RG337088 \n" 
-        "⚓Ramps: 14ft \n"
+        "🔑 VIN:3C63RRHL5RG337088 \n"
+        "⚓ Ramps: 14ft \n"
         "⚖ Weight: 9220lb \n"
         "🅱 Owner: Owner Operator"
-    ),   
+    ),
     "Водитель GRIGORII MOSKALETS": (
         "📌 Driver Name: GRIGORII MOSKALETS \n"
         "📞 Phone Number: 754-284-6442 \n"
         "🚛 Truck Number: 15 \n"
         "🚂 Trailer Number: 15 \n"
-        "🔑 VIN:3C63RRHL0RG280427 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL0RG280427 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9220lb \n"
         "🅱 Owner: Dumitru OU"
     ),
@@ -217,8 +191,8 @@ drivers_info = {
         "📞 Phone Number: 386-225-1619 \n"
         "🚛 Truck Number: 19 \n"
         "🚂 Trailer Number: 19 \n"
-        "🔑 VIN:3C63RRGL2RG219808 \n" 
-        "⚓Ramps: 14ft \n"
+        "🔑 VIN:3C63RRGL2RG219808 \n"
+        "⚓ Ramps: 14ft \n"
         "⚖ Weight: 8200lb \n"
         "🅱 Owner: Ruslan"
     ),
@@ -227,8 +201,8 @@ drivers_info = {
         "📞 Phone Number: 718-344-0617 \n"
         "🚛 Truck Number: 4 \n"
         "🚂 Trailer Number: 4 \n"
-        "🔑 VIN:3C63RRHLXRG341413 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:3C63RRHLXRG341413 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
     ),
@@ -237,8 +211,8 @@ drivers_info = {
         "📞 Phone Number: 754-286-7577 \n"
         "🚛 Truck Number: 16 \n"
         "🚂 Trailer Number: 16 \n"
-        "🔑 VIN:3C63RRHL2PG643033 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL2PG643033 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"
     ),
@@ -247,8 +221,8 @@ drivers_info = {
         "📞 Phone Number: 773-751-9292 \n"
         "🚛 Truck Number: 18 \n"
         "🚂 Trailer Number: 18 \n"
-        "🔑 VIN:3C63RRHL0RG289662 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL0RG289662 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8100lb \n"
         "🅱 Owner: Dumitru OU"
     ),
@@ -257,8 +231,8 @@ drivers_info = {
         "📞 Phone Number: 305-391-1839 \n"
         "🚛 Truck Number: 6 \n"
         "🚂 Trailer Number: 6 \n"
-        "🔑 VIN:3C63RRGL0RG183858 \n" 
-        "⚓Ramps: 12ft \n"
+        "🔑 VIN:3C63RRGL0RG183858 \n"
+        "⚓ Ramps: 12ft \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Ruslan"
     ),
@@ -267,8 +241,8 @@ drivers_info = {
         "📞 Phone Number: 916-940-5888 \n"
         "🚛 Truck Number: 26 \n"
         "🚂 Trailer Number: 26 \n"
-        "🔑 VIN:1GT49LEY8RF467913 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:1GT49LEY8RF467913 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -277,8 +251,8 @@ drivers_info = {
         "📞 Phone Number: 916-912-7398 \n"
         "🚛 Truck Number: 42 \n"
         "🚂 Trailer Number: 42 \n"
-        "🔑 VIN:1GT4USEY5SF221416 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:1GT4USEY5SF221416 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -287,8 +261,8 @@ drivers_info = {
         "📞 Phone Number: 347-739-8531 \n"
         "🚛 Truck Number: 22 \n"
         "🚂 Trailer Number: 22 \n"
-        "🔑 VIN:3C63RRHL9KG642308 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL9KG642308 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8860lb \n"
         "🅱 Owner: Rassul"
     ),
@@ -297,8 +271,8 @@ drivers_info = {
         "📞 Phone Number: 224-422-3658 \n"
         "🚛 Truck Number: 03 \n"
         "🚂 Trailer Number: 03 \n"
-        "🔑 VIN:1FT8W3DT5NEG00613 \n" 
-        "⚓Ramps: n/a \n"
+        "🔑 VIN:1FT8W3DT5NEG00613 \n"
+        "⚓ Ramps: n/a \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner"
     ),
@@ -308,17 +282,17 @@ drivers_info = {
         "🚛 Truck Number: 2 \n"
         "🚂 Trailer Number: 2 \n"
         "🔑 VIN:3C63RRHL2RG358187 \n"
-        "⚓Ramps: 8ft \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex"
-     ),
+    ),
     "Водитель RUSTAM TAMBIEV": (
         "📌 Driver Name: RUSTAM TAMBIEV \n"
         "📞 Phone Number: 224-443-3233 \n"
         "🚛 Truck Number: 41 \n"
         "🚂 Trailer Number: 41 \n"
         "🔑 VIN:1FT8W3DT7PEC16514 \n"
-        "⚓Ramps: 8ft \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: "
     ),
@@ -327,8 +301,8 @@ drivers_info = {
         "📞 Phone Number: 347-232-8827 \n"
         "🚛 Truck Number: 36 \n"
         "🚂 Trailer Number: 36 \n"
-        "🔑 VIN:1FT8W3DT3REF83199 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:1FT8W3DT3REF83199 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -337,8 +311,8 @@ drivers_info = {
         "📞 Phone Number: 929-481-9521 \n"
         "🚛 Truck Number: 39 \n"
         "🚂 Trailer Number: 39 \n"
-        "🔑 VIN:1FT8W3DT9REE49099 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:1FT8W3DT9REE49099 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -347,8 +321,8 @@ drivers_info = {
         "📞 Phone Number: 253-286-8080 \n"
         "🚛 Truck Number: 29 \n"
         "🚂 Trailer Number: 29 \n"
-        "🔑 VIN:3C63RRGL6RG382381 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL6RG382381 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8680lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -357,8 +331,8 @@ drivers_info = {
         "📞 Phone Number: 754-271-3481 \n"
         "🚛 Truck Number: 12 \n"
         "🚂 Trailer Number: 12 \n"
-        "🔑 VIN:3C63RRHL6RG341392 \n" 
-        "⚓Ramps: ft \n"
+        "🔑 VIN:3C63RRHL6RG341392 \n"
+        "⚓ Ramps: ft \n"
         "⚖ Weight: lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
@@ -367,28 +341,28 @@ drivers_info = {
         "📞 Phone Number: 929-627-1722 \n"
         "🚛 Truck Number: 14 \n"
         "🚂 Trailer Number: 14 \n"
-        "🔑 VIN: 3C63R3HL7RG339129\n" 
-        "⚓Ramps: ft \n"
+        "🔑 VIN:3C63R3HL7RG339129\n"
+        "⚓ Ramps: ft \n"
         "⚖ Weight: 8500lb \n"
-        "🅱 Owner: "        
+        "🅱 Owner: "
     ),
     "Водитель GEORGII RIONELI": (
         "📌 Driver Name: GEORGII RIONELI \n"
         "📞 Phone Number: 925-440-1503 \n"
         "🚛 Truck Number: 35 \n"
         "🚂 Trailer Number: 35 \n"
-        "🔑 VIN:3C63RRGL0NG356465 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL0NG356465 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель DENIS COLESNICENCO": (
-        "📌 Driver Name: DENIS COLESNICENC \n"
+        "📌 Driver Name: DENIS COLESNICENCO \n"
         "📞 Phone Number: 630-352-9196 \n"
         "🚛 Truck Number: 38 \n"
         "🚂 Trailer Number: 38 \n"
-        "🔑 VIN:3C63RRHL6RG289522 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL6RG289522 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9600lb \n"
         "🅱 Owner: Kiril"
     ),
@@ -397,8 +371,8 @@ drivers_info = {
         "📞 Phone Number: 331-229-8750 \n"
         "🚛 Truck Number: 20 \n"
         "🚂 Trailer Number: 20 \n"
-        "🔑 VIN:3C63RRGL3KG618197 \n" 
-        "⚓Ramps: Mega Ramps \n"
+        "🔑 VIN:3C63RRGL3KG618197 \n"
+        "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 8700lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -407,18 +381,18 @@ drivers_info = {
         "📞 Phone Number: 224-463-0235 \n"
         "🚛 Truck Number: 5 \n"
         "🚂 Trailer Number: 5 \n"
-        "🔑 VIN:3C63RRGL9KG700614 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL9KG700614 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9700lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель EVGENY SYROMITSKII": (
-        "📌 Driver Name: TAULAN TOTORKULOV \n"
+        "📌 Driver Name: EVGENY SYROMITSKII \n"
         "📞 Phone Number: 754-600-7170 \n"
         "🚛 Truck Number: 2 \n"
         "🚂 Trailer Number: 2 \n"
-        "🔑 VIN:3C63RRHL2RG358187 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL2RG358187 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8800lb \n"
         "🅱 Owner: Radu"
     ),
@@ -427,8 +401,8 @@ drivers_info = {
         "📞 Phone Number: 412-304-4565 \n"
         "🚛 Truck Number: 8 \n"
         "🚂 Trailer Number: 8 \n"
-        "🔑 VIN:3C63R3GL6NG159989 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63R3GL6NG159989 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -437,8 +411,8 @@ drivers_info = {
         "📞 Phone Number: 916-767-6753 \n"
         "🚛 Truck Number: 32 \n"
         "🚂 Trailer Number: 32 \n"
-        "🔑 VIN:3C63RRHL2RG289436 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL2RG289436 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Stas"
     ),
@@ -447,8 +421,8 @@ drivers_info = {
         "📞 Phone Number: 917-704-3848 \n"
         "🚛 Truck Number: 37 \n"
         "🚂 Trailer Number: 37 \n"
-        "🔑 VIN:3C63RRHL6RG307632 \n" 
-        "⚓Ramps: n/a \n"
+        "🔑 VIN:3C63RRHL6RG307632 \n"
+        "⚓ Ramps: n/a \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
     ),
@@ -457,8 +431,8 @@ drivers_info = {
         "📞 Phone Number: 786-868-5690 \n"
         "🚛 Truck Number: 13 \n"
         "🚂 Trailer Number: 13 \n"
-        "🔑 VIN:3C63RRGL7RG295329 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRGL7RG295329 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
@@ -467,53 +441,54 @@ drivers_info = {
         "📞 Phone Number: 347-845-5604 \n"
         "🚛 Truck Number: 333 \n"
         "🚂 Trailer Number: 927 \n"
-        "🔑 VIN:3AKJHHDR2SSWH0860 \n" 
-        "⚓Ramps: 16ft \n"
+        "🔑 VIN:3AKJHHDR2SSWH0860 \n"
+        "⚓ Ramps: 16ft \n"
         "⚖ Weight: 45000lb \n"
-        "🅱 Owner: Ruslan 804-405-7438"        
+        "🅱 Owner: Ruslan 804-405-7438"
     ),
     "Водитель GREENGREYLINE KALCHUK GRYGORII": (
         "📌 Driver Name: KALCHUK GRYGORII \n"
         "📞 Phone Number: 872-240-7229 \n"
         "🚛 Truck Number: 29 \n"
         "🚂 Trailer Number: 29 \n"
-        "🔑 VIN: 3AKJHHDR0TSWL2968 \n" 
-        "⚓Ramps: 16ft \n"
+        "🔑 VIN:3AKJHHDR0TSWL2968 \n"
+        "⚓ Ramps: 16ft \n"
         "⚖ Weight: 45000lb \n"
-        "🅱 Owner: Owner Mihail 267-997-8913"        
+        "🅱 Owner: Owner Mihail 267-997-8913"
     ),
     "Водитель MIM Logistics INC VALENTIN NEIZHKO": (
         "📌 Driver Name: VALENTIN NEIZHKO \n"
         "📞 Phone Number: 331-271-7110 \n"
         "🚛 Truck Number: 40 \n"
         "🚂 Trailer Number: 40 \n"
-        "🔑 VIN:3C63RRHL4JG201345 \n" 
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRHL4JG201345 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
-        "🅱 Owner: Owner Operator"        
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель SRV Trust Way INC GEORGII DZOTOV": (
         "📌 Driver Name: GEORGII DZOTOV \n"
         "📞 Phone Number: 224-284-4234 \n"
         "🚛 Truck Number: 45 \n"
         "🚂 Trailer Number: 45 \n"
-        "🔑 VIN:3C63RRGL1RG416890 \n" 
-        "⚓Ramps: n/a \n"
+        "🔑 VIN:3C63RRGL1RG416890 \n"
+        "⚓ Ramps: n/a \n"
         "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Stas"        
+        "🅱 Owner: Stas"
     ),
     "Водитель YEVHENII MATVIEIEV": (
         "📌 Driver Name: YEVHENII MATVIEIEV \n"
         "📞 Phone Number: 689-233-2513 \n"
         "🚛 Truck Number: 31 \n"
         "🚂 Trailer Number: 31 \n"
-        "🔑 VIN: 3C63RRJLXNG152569 \n"
-        "⚓Ramps: 8ft \n"
+        "🔑 VIN:3C63RRJLXNG152569 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Radu"
-    ),
+    )
 }
-# URL для фотографий и файлов
+
+# URL для фотографий и файлов водителей
 drivers_files = {
     "Водитель RAMIL KHAFIZOV": {
         "photo": "https://drive.google.com/file/d/1RebRt_fdyY9zFgDbNq43MmsYOi5t9G5p/view?usp=drive_link",
@@ -605,7 +580,7 @@ drivers_files = {
     },
     "Водитель MIM Logistics INC ANVAR BIDZHIEV": {
         "photo": "https://drive.google.com/file/d/1pTL-8UQs717x0bvnvszmg29bZxNeXBtQ/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1cTtZhzYBYQS37RlTXo9XPtAwh68Mv870/view?usp=drive_link"        
+        "files": "https://drive.google.com/file/d/1cTtZhzYBYQS37RlTXo9XPtAwh68Mv870/view?usp=drive_link"
     },
     "Водитель ILLIA HORBATOK": {
         "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
@@ -673,103 +648,120 @@ drivers_files = {
     },
     "Водитель GREENGREYLINE SHALIMOV IVAN": {
         "photo": "https://drive.google.com/file/d/1odDV94XYFwtdTNmDcAyqxEH_E-rSyQGR/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1YAOqn90HQX8N7lhnmkFUiqjF5Zm0KrCz/view?usp=drive_link"        
+        "files": "https://drive.google.com/file/d/1YAOqn90HQX8N7lhnmkFUiqjF5Zm0KrCz/view?usp=drive_link"
     },
     "Водитель GREENGREYLINE KALCHUK GRYGORII": {
         "photo": "https://drive.google.com/file/d/1tdYfeeDdw4xcvt9v3zp1irOUSbeJPbWo/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1-fH8II7dtc9cFbFjol30K213XtxWw1zg/view?usp=drive_link"        
+        "files": "https://drive.google.com/file/d/1-fH8II7dtc9cFbFjol30K213XtxWw1zg/view?usp=drive_link"
     },
     "Водитель MIM Logistics INC VALENTIN NEIZHKO": {
         "photo": "https://drive.google.com/file/d/1EaKXoCfbpe3rpTKVgAHTk2ojwI-NGZDr/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1mEEqePzPBUNPPSAhwfyyH81VRxuXU4sR/view?usp=drive_link"        
+        "files": "https://drive.google.com/file/d/1mEEqePzPBUNPPSAhwfyyH81VRxuXU4sR/view?usp=drive_link"
     },
     "Водитель SRV Trust Way INC GEORGII DZOTOV": {
         "photo": "https://drive.google.com/file/d/1BU52Ri3tOMsRj22Wm02-hFocrNc8vfFJ/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1X8D66asKoBZuSJo5b5KAvVPH_6AFeHn-/view?usp=drive_link"        
+        "files": "https://drive.google.com/file/d/1X8D66asKoBZuSJo5b5KAvVPH_6AFeHn-/view?usp=drive_link"
     },
     "Водитель YEVHENII MATVIEIEV": {
         "photo": "https://drive.google.com/file/d/159qThglnM__npOf28XPXvRHUdLSCNc1P/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1r4pT2_LlK6esYlFmelHWO3LbmenmT9eC/view?usp=drive_link"
-    },
+    }
 }
 
+# 🔎 Обработчик текстовых сообщений для поиска водителя по имени
+async def search_driver(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text.lower().strip()
+    # Если сообщение содержит приветствие или команду, обрабатываем как /start (гreeting)
+    trigger_words = ["привет", "hi", "salut", "начать", "старт"]
+    if any(word in text.split() for word in trigger_words) or text.startswith("/"):
+        # Проверяем доступ и показываем меню (используем функциональность /start)
+        await start(update, context)
+        return
+    # Проверка доступа для обычного запроса (чтобы не отвечать неавторизованным)
+    if not await check_access(update):
+        return
+    # Поиск информации о водителе по имени (нечувствителен к регистру, поиск по подстроке)
+    matches = [(name, info) for name, info in drivers_info.items() if text in name.lower()]
+    if not matches:
+        await update.message.reply_text("🚫 Водитель не найден.")
+    elif len(matches) == 1:
+        # Единственное совпадение – выводим информацию о водителе
+        await update.message.reply_text(matches[0][1], parse_mode='HTML')
+    else:
+        # Несколько совпадений – перечисляем найденных водителей
+        found_names = "\n".join(name for name, info in matches)
+        await update.message.reply_text(f"🔎 Найдено несколько водителей:\n{found_names}")
+
+# 👥 Показывает список диспетчеров (при нажатии на кнопку "Список диспетчеров")
 async def show_dispatchers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     keyboard = [[InlineKeyboardButton(name, callback_data=name)] for name in dispatchers.keys()]
     keyboard.append([InlineKeyboardButton("⬅️ Назад", callback_data='start')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.message.reply_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
+    await query.message.edit_text("👥 Выберите диспетчера:", reply_markup=reply_markup)
 
-
+# 🚛 Показывает список водителей выбранного диспетчера
 async def show_drivers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    selected_dispatcher = query.data
-    keyboard = [[InlineKeyboardButton(name, callback_data=name)] for name in dispatchers[selected_dispatcher]]
+    selected_dispatcher = query.data  # имя диспетчера из callback_data
+    keyboard = [[InlineKeyboardButton(driver, callback_data=driver)] for driver in dispatchers[selected_dispatcher]]
     keyboard.append([InlineKeyboardButton("⬅️ Назад", callback_data='dispatchers')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.message.reply_text(f"🚛 Водители диспетчера {selected_dispatcher}:", reply_markup=reply_markup)
+    await query.message.edit_text(f"🚛 Водители диспетчера {selected_dispatcher}:", reply_markup=reply_markup)
 
-
+# 📋 Показывает информацию о выбранном водителе и клавиатуру (Фото, Файлы, Назад)
 async def show_driver_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    selected_driver = query.data
-    keyboard = [
-        [InlineKeyboardButton("📸 Фото", url=drivers_files[selected_driver]["photo"]),
-         InlineKeyboardButton("📂 Файлы", url=drivers_files[selected_driver]["files"])],
-        [InlineKeyboardButton("⬅️ Назад", callback_data='dispatchers')]
+    selected_driver = query.data  # имя водителя из callback_data
+    # Определяем, к какому диспетчеру относится этот водитель (для корректной работы кнопки "Назад")
+    parent_dispatcher = None
+    for dispatcher_name, drivers_list in dispatchers.items():
+        if selected_driver in drivers_list:
+            parent_dispatcher = dispatcher_name
+            break
+    # Формируем клавиатуру: Фото, Файлы (ссылки) и Назад (в список водителей диспетчера)
+    keyboard_buttons = [
+        InlineKeyboardButton("📸 Фото", url=drivers_files.get(selected_driver, {}).get("photo", "")),
+        InlineKeyboardButton("📂 Файлы", url=drivers_files.get(selected_driver, {}).get("files", ""))
     ]
+    # Кнопки "Фото" и "Файлы" открывают ссылки; кнопка "Назад" возвращает к списку водителей того же диспетчера
+    keyboard = [keyboard_buttons, [InlineKeyboardButton("⬅️ Назад", callback_data=parent_dispatcher or 'dispatchers')]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.message.edit_text(f"{drivers_info[selected_driver]}", reply_markup=reply_markup)
+    # Отправляем информацию о водителе (с форматированием HTML, если есть)
+    await query.message.edit_text(drivers_info[selected_driver], reply_markup=reply_markup, parse_mode='HTML')
 
-
+# 🔄 Общий обработчик всех нажатий на кнопки (CallbackQuery)
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    await query.answer()
-
-    # Переход по различным callback_data
-    if query.data == 'start':
-        await start(update, context)
-    elif query.data == 'dispatchers':
+    # Попытка быстро ответить на запрос (чтобы убрать "часики" у кнопки)
+    try:
+        await query.answer()
+    except telegram.error.BadRequest:
+        pass
+    # Обработка нажатия в зависимости от callback_data
+    data = query.data
+    if data == 'start':
+        # Вернуться в главное меню
+        keyboard = [[InlineKeyboardButton("👥 Список диспетчеров", callback_data='dispatchers')]]
+        await query.message.edit_text("🚛 Главное меню:", reply_markup=InlineKeyboardMarkup(keyboard))
+    elif data == 'dispatchers':
         await show_dispatchers(update, context)
-    elif query.data in dispatchers:
+    elif data in dispatchers:
         await show_drivers(update, context)
-    elif query.data in drivers_info:
+    elif data in drivers_info:
         await show_driver_info(update, context)
-    elif query.data.startswith("photo_"):
-        selected_driver = query.data.split("_")[1]
+    # (Обработка кнопок "Фото" и "Файлы" через callback_data не нужна,
+    # т.к. они реализованы как ссылки. Если бы они были callback,
+    # можно было бы добавить условия data.startswith("photo_") и data.startswith("files_").)
 
-        # Проверяем, есть ли фото для выбранного водителя
-        if selected_driver in drivers_files and "photo" in drivers_files[selected_driver]:
-            photo_path = drivers_files[selected_driver]["photo"]
-            try:
-                await query.message.reply_photo(photo=open(photo_path, 'rb'))
-            except Exception as e:
-                await query.message.reply_text(f"Ошибка при отправке фото: {e}")
-        else:
-            await query.message.reply_text("Фото не найдено для этого водителя.")
-    elif query.data.startswith("files_"):
-        selected_driver = query.data.split("_")[1]
+# Создание и запуск приложения Telegram Bot
+app = Application.builder().token("7614938053:AAG3aOd3VrRyV6LKyHKVmjrFSTwF_31w5Bc").build()
 
-        # Проверяем, есть ли документ для выбранного водителя
-        if selected_driver in drivers_files and "document" in drivers_files[selected_driver]:
-            file_path = drivers_files[selected_driver]["document"]
-            try:
-                await query.message.reply_document(document=open(file_path, 'rb'))
-            except Exception as e:
-                await query.message.reply_text(f"Ошибка при отправке документа: {e}")
-        else:
-            await query.message.reply_text("Документы не найдены для этого водителя.")
-
-
-# Создание приложения
-app = Application.builder().token("7931949571:AAEYdSWhL_ksOCK17RhFgF2gvlPqlwEgj0U").build()
-
-# Добавление обработчиков
-app.add_handler(CallbackQueryHandler(show_dispatchers, pattern="^dispatchers$"))
+# Регистрация обработчиков
 app.add_handler(CommandHandler("start", start))
+app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, search_driver))
 app.add_handler(CallbackQueryHandler(button_handler))
 
-# Запуск бота
 if __name__ == "__main__":
     print("Бот запущен...")
     app.run_polling()
