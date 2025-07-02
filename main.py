@@ -764,6 +764,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = Application.builder().token("7931949571:AAEYdSWhL_ksOCK17RhFgF2gvlPqlwEgj0U").build()
 
 # Добавление обработчиков
+app.add_handler(CallbackQueryHandler(show_dispatchers, pattern="^dispatchers$"))
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button_handler))
 
