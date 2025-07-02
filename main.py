@@ -707,7 +707,8 @@ async def show_drivers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton(name, callback_data=name)] for name in dispatchers[selected_dispatcher]]
     keyboard.append([InlineKeyboardButton("⬅️ Назад", callback_data='dispatchers')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.message.edit_text(f"🚛 Водители диспетчера {selected_dispatcher}:", reply_markup=reply_markup)
+    await query.message.reply_text(f"🚛 Водители диспетчера {selected_dispatcher}:", reply_markup=reply_markup)
+
 
 async def show_driver_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -761,7 +762,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 # Создание приложения
-app = Application.builder().token("7614938053:AAG3aOd3VrRyV6LKyHKVmjrFSTwF_31w5Bc").build()
+app = Application.builder().token("7931949571:AAEYdSWhL_ksOCK17RhFgF2gvlPqlwEgj0U").build()
 
 # Добавление обработчиков
 app.add_handler(CallbackQueryHandler(show_dispatchers, pattern="^dispatchers$"))
