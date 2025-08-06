@@ -328,7 +328,7 @@ drivers_info = {
     ),
     "Водитель DIONISIE COTOVICI": (
         "📌 Driver Name: DIONISIE COTOVICI \n"
-        "📞 Phone Number: 754-271-3481 \n"
+        "📞 Phone Number: 954-295-6482 \n"
         "🚛 Truck Number: 12 \n"
         "🚂 Trailer Number: 12 \n"
         "🔑 VIN:3C63RRHL6RG341392 \n"
