@@ -35,14 +35,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚛 Диспетчер Andrew": [ ],
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", ],
     "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель IHOR KIRSHAK", "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель TOTRAZ ABAEV", "Водитель MARIN GULIA"],
-    "🏍 Диспетчер Nick": ["Водитель ALBERT ABAIKHANOV", "Водитель MUKHAMED ADZHIEV"],
-    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель TAULAN TOTORKULOV", "Водитель EVGENY SYROMITSKII", "Водитель SERHII HONCHARENKO"],
+    "🏍 Диспетчер Nick": [ ],
+    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель EVGENY SYROMITSKII"],
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": [],
-    "🎈 Диспетчер NONE": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель DENIS COLESNICENCO", "Водитель RUSTAM TAMBIEV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель GREENGREYLINE SHALIMOV IVAN", "Водитель AZAT BORONCHIEV", "Водитель AZAT AZAMAT", "Водитель VIKTOR ATANOV", "Водитель TSYDEN TOBODORZHIEV", "Водитель RAMIL KHAFIZOV", "Водитель MIRBEK ALOEV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGREYLINE KALCHUK GRYGORII", "Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS", "Водитель RUSTAM TAMBIEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
+    "🎈 Диспетчер NONE": ["Водитель (Said) MAGOMEDSAID GABIBULAEV", "Водитель MUKHAMED ADZHIEV", "Водитель DENIS COLESNICENCO", "Водитель RUSTAM TAMBIEV", "Водитель MIM Logistics INC ANVAR BIDZHIEV", "Водитель GREENGREYLINE SHALIMOV IVAN", "Водитель AZAT BORONCHIEV", "Водитель AZAT AZAMAT", "Водитель VIKTOR ATANOV", "Водитель TSYDEN TOBODORZHIEV", "Водитель RAMIL KHAFIZOV", "Водитель MIRBEK ALOEV", "Водитель SOSLAN GAGLOEV", "Водитель GREENGREYLINE KALCHUK GRYGORII", "Водитель VITALII HONCHAROV", "Водитель GRIGORII MOSKALETS", "Водитель RUSTAM TAMBIEV", "Водитель YEVHENII MATVIEIEV", "Водитель SRV URUZMAG TSAKOEV", "Водитель MIM Logistics INC VALENTIN NEIZHKO", "Водитель SRV Trust Way INC GEORGII DZOTOV"]
 }
 
 drivers_info = {
