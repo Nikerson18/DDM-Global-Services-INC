@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель BULAT TSYRENOV"],
-    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
+    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель GREGORY GARBUZENCO"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
@@ -132,6 +132,16 @@ drivers_info = {
         "⚓ Ramps: n/a \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
+    ),
+      "Водитель GREGORY GARBUZENCO": (
+        "📌 Driver Name: GREGORY GARBUZENCO \n"
+        "📞 Phone Number: 470-301-8232 \n"
+        "🚛 Truck Number: 120 \n"
+        "🚂 Trailer Number: 12 \n"
+        "🔑 VIN:1FT8W3DT9SEC54495 \n"
+        "⚓ Ramps: 14ft \n"
+        "⚖ Weight: 9300lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель DARMAN ORUZBAEV": (
         "📌 Driver Name: DARMAN ORUZBAEV \n"
@@ -312,6 +322,10 @@ drivers_files = {
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1tbbt12v_jmVZL9e0v9eGmYHLa2HQkYWv/view?usp=drive_link"
+    },
+      "Водитель GREGORY GARBUZENCO": {
+        "photo": "https://drive.google.com/file/d/1pNAgo7rTk5HXQEV4Lv2bIyjnnmTqQXWF/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1TD9fzc3wHHNSCzzI6xiOrLj-UnWpHW1W/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
