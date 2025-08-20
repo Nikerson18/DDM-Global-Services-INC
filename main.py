@@ -35,12 +35,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", ],
-    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", , "Водитель OLEH SEMENENNKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
+    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", , "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
-    "✈ Диспетчер Max": [],
-    "🎈 Диспетчер NONE": ["Водитель SOSLAN GAGLOEV"]
+    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
 }
 
 drivers_info = {
@@ -86,20 +85,20 @@ drivers_info = {
     ),
     "Водитель BULAT TSYRENOV": (
         "📌 Driver Name: BULAT TSYRENOV \n"
-        "📞 Phone Number:  \n"
-        "🚛 Truck Number:  \n"
-        "🚂 Trailer Number:  \n"
-        "🔑 VIN: \n"
+        "📞 Phone Number: 929-503-2150 \n"
+        "🚛 Truck Number: 40 \n"
+        "🚂 Trailer Number: 40 \n"
+        "🔑 VIN:1FT8W3DT6SED46521 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight:  \n"
-        "🅱 Owner: "
+        "⚖ Weight: 9800lb \n"
+        "🅱 Owner: Owner Operator "
     ),
-    "Водитель OLEH SEMENENNKO": (
+    "Водитель OLEH SEMENENKO": (
         "📌 Driver Name: OLEH SEMENENNKO \n"
         "📞 Phone Number: 701-971-4705 \n"
         "🚛 Truck Number: 25 \n"
         "🚂 Trailer Number: 25 \n"
-        "🔑 VIN:3C63RRHL2RG307630 \n"
+        "🔑 VIN:3C63RRHL3RG301237 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Radu"
@@ -107,9 +106,9 @@ drivers_info = {
     "Водитель LATIPOV PARVIZ": (
         "📌 Driver Name: LATIPOV PARVIZ \n"
         "📞 Phone Number: 267-574-4243 \n"
-        "🚛 Truck Number: 31 \n"
-        "🚂 Trailer Number: 31 \n"
-        "🔑 VIN:3C63RRJLLXNG152569 \n"
+        "🚛 Truck Number: 7 \n"
+        "🚂 Trailer Number: 7 \n"
+        "🔑 VIN:1FT8W3DT7SED01359 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
@@ -117,9 +116,9 @@ drivers_info = {
     "Водитель ILLIA HORBATOK": (
         "📌 Driver Name: ILLIA HORBATOK \n"
         "📞 Phone Number: 701-403-0994 \n"
-        "🚛 Truck Number: 2 \n"
-        "🚂 Trailer Number: 2 \n"
-        "🔑 VIN:3C63RRHL2RG358187 \n"
+        "🚛 Truck Number: 14 \n"
+        "🚂 Trailer Number: 17 \n"
+        "🔑 VIN:3C63R3HL7RG339129 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex"
@@ -147,9 +146,9 @@ drivers_info = {
     "Водитель YERKEBULAN BOSHAIBEKOV": (
         "📌 Driver Name: YERKEBULAN BOSHAIBEKOV \n"
         "📞 Phone Number: 773-751-9292 \n"
-        "🚛 Truck Number: 18 \n"
-        "🚂 Trailer Number: 18 \n"
-        "🔑 VIN:3C63RRHL0RG289662 \n"
+        "🚛 Truck Number: 15 \n"
+        "🚂 Trailer Number: 15 \n"
+        "🔑 VIN:3C63RRHL2RG341423 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8100lb \n"
         "🅱 Owner: Dumitru OU"
@@ -157,9 +156,9 @@ drivers_info = {
     "Водитель MARIN GULIA": (
         "📌 Driver Name: MARIN GULIA \n"
         "📞 Phone Number: 916-912-7398 \n"
-        "🚛 Truck Number: 42 \n"
-        "🚂 Trailer Number: 42 \n"
-        "🔑 VIN:1GT4USEY5SF221416 \n"
+        "🚛 Truck Number: 19 \n"
+        "🚂 Trailer Number: 19 \n"
+        "🔑 VIN:3C63RRGL2RG219808 \n"
         "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 9500lb \n"
         "🅱 Owner: Owner Operator"
@@ -187,11 +186,11 @@ drivers_info = {
     "Водитель DIONISIE COTOVICI": (
         "📌 Driver Name: DIONISIE COTOVICI \n"
         "📞 Phone Number: 954-295-6482 \n"
-        "🚛 Truck Number: 12 \n"
-        "🚂 Trailer Number: 12 \n"
-        "🔑 VIN:3C63RRHL6RG341392 \n"
-        "⚓ Ramps: ft \n"
-        "⚖ Weight: lb \n"
+        "🚛 Truck Number: 18 \n"
+        "🚂 Trailer Number: 18 \n"
+        "🔑 VIN:3C63RRHL2RG289632 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
     "Водитель EVGENY SYROMITSKII": (
@@ -199,17 +198,17 @@ drivers_info = {
         "📞 Phone Number: 754-600-7170 \n"
         "🚛 Truck Number: 2 \n"
         "🚂 Trailer Number: 2 \n"
-        "🔑 VIN:3C63RRHL2RG358187 \n"
+        "🔑 VIN:3C63RRHL2RG108058 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8800lb \n"
         "🅱 Owner: Radu"
     ),
     "Водитель RADZHAB MAGOMEDOV": (
         "📌 Driver Name: RADZHAB MAGOMEDOV \n"
-        "📞 Phone Number:  \n"
-        "🚛 Truck Number:  \n"
-        "🚂 Trailer Number:  \n"
-        "🔑 VIN: \n"
+        "📞 Phone Number: 541-800-9999 \n"
+        "🚛 Truck Number: 26 \n"
+        "🚂 Trailer Number: 26 \n"
+        "🔑 VIN:1FT8W3DT1RED22119 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight:  \n"
         "🅱 Owner: "
@@ -227,19 +226,19 @@ drivers_info = {
     "Водитель IGOR BALAKIN": (
         "📌 Driver Name: IGOR BALAKIN \n"
         "📞 Phone Number: 331-229-8750 \n"
-        "🚛 Truck Number: 20 \n"
+        "🚛 Truck Number: 6 \n"
         "🚂 Trailer Number: 20 \n"
-        "🔑 VIN:3C63RRGL3KG618197 \n"
+        "🔑 VIN:1GC4KTEY4SF336343 \n"
         "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 8700lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель SERGIU CIOBANU": (
         "📌 Driver Name: SERGIU CIOBANU \n"
-        "📞 Phone Number:  \n"
-        "🚛 Truck Number:  \n"
-        "🚂 Trailer Number:  \n"
-        "🔑 VIN: \n"
+        "📞 Phone Number: 224-343-1680 \n"
+        "🚛 Truck Number: 16 \n"
+        "🚂 Trailer Number: 38 \n"
+        "🔑 VIN:3C63RRHL7RG337075 \n"
         "⚓ Ramps:  \n"
         "⚖ Weight:  \n"
         "🅱 Owner: "
@@ -279,96 +278,96 @@ drivers_info = {
 # URL для фотографий и файлов водителей
 drivers_files = {
     "Водитель ALEKSEI LAMATKHANOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1wIiX2huhoeTQUT4MLZ9YoX5a7k-bXwzA/view?usp=drive_link"
     },
     "Водитель BILIKTO LAMATKHANOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1iAjETTrVD9vGrDCFKzKxSlTTLqTzGGw7/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1RYAhmda76uidHpvdUnQnFxDsYRgkA4Ll/view?usp=drive_link"
     },
     "Водитель ALEKSANDR PAVLOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1wFHZryy0XO1sNrF5uMBokhMLaWTjsx-k/view?usp=drive_link"
     },
     "Водитель BAIR DABAIN": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1EiLW7-ITrIKjqefHMU1MtHBTwFM-V7yG/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1qu93gInvYFyNjfDSMeOrwWEC2x7Yo-Sw/view?usp=drive_link"
     },
     "Водитель BULAT TSYRENOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1TOUmyWOSc4VZb5-ndzh85rjm8UAkoqAT/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1yTNFdriNPquqiuX73q2Q8X55qLIE7SNo/view?usp=drive_link"
     },
-    "Водитель OLEH SEMENENNKO": {
-        "photo": "",
-        "files": ""
+    "Водитель OLEH SEMENENKO": {
+        "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1355yJvYbY8onkEGG5-sRFvK2Rhxu15Ii/view?usp=drive_link"
     },
     "Водитель LATIPOV PARVIZ": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1xdc15lyPYEd-rTVWjq5wlun3U2Xoi6Nn/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1sOUMQjtE-DnTY4wGI9xvHiURC3suAstD/view?usp=drive_link"
     },
     "Водитель ILLIA HORBATOK": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1IWQ-TKERVegzJ6y4GWVj1qXeg6DUuNZw/view?usp=drive_link"
     },
     "Водитель (DOS) DASTAN MASYLKANOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1tbbt12v_jmVZL9e0v9eGmYHLa2HQkYWv/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1Vhz7b_i7_kTZeSvw7XRVhFW9rM6ePkic/view?usp=drive_link"
     },
     "Водитель YERKEBULAN BOSHAIBEKOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1mG7YPuGRjU8cFrKPxNW-1gw2-3AwQYoe/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1sho0q6vXp8XS1e1z2yORpdmy0khSrbqF/view?usp=drive_link"
     },
     "Водитель MARIN GULIA": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1gNGy-qOQQUd7W_DljwzbOBiEM473il1e/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1Rhf0fj_nzjUa-mWcMurFCXzuqxeHKw0m/view?usp=drive_link"
     },
     "Водитель ERDEM DORZHIEV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1-xI2Xysnd19jiFp65Fwu4XenVHKjbAut/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1Mq1q3bF9-UVpVD5yZ0zZzqV5ZpbOLVj0/view?usp=drive_link"
     },
     "Водитель OLEG RESHAEV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1DHJ2H1BlcwDFzCdTkC2-4gPSSgn3eePE/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1sMQYx819pI9DRtoh6bK1oBYtBMDl4Zhi/view?usp=drive_link"
     },
     "Водитель DIONISIE COTOVICI": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/15t4skooNi866yUtfnLNdcwZUm-AIupU7/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1Mty-C0YIjJedlzO2A3HUSPF15W68ivRz/view?usp=drive_link"
     },
     "Водитель EVGENY SYROMITSKII": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1XwPSlu9JgUMg_q09fO1gWgjtCV1ZHno1/view?usp=drive_link"
     },
     "Водитель RADZHAB MAGOMEDOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1ZkQQAhZD2eufBwiAr1SVJME8ffp-nK1m/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1-PKgg6VYVUK3kPy8waWwVZvUxOTQjv0b/view?usp=drive_link"
     },
     "Водитель GEORGII RIONELI": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1gi0RkYOlGyH_TSgs0MhTATcNsaamiyJD/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1keW4Iuhc72asf0PnfO_cnzAHoAhfhgOA/view?usp=drive_link"
     },
     "Водитель IGOR BALAKIN": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1InjrQgybbfXYM8cqiEcIAXV2h_dgmgSz/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1U4cQbMVK1lreT75ZDgTf_qAlt-1rjHgG/view?usp=drive_link"
     },
     "Водитель SERGIU CIOBANU": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1ZP9zCEHO8C8LXbb3x6yxYg6jhVbD8D_I/view?usp=drive_link"
     },
     "Водитель TAULAN TOTORKULOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1hrVycBVGxxXq9-aNZWfW40hk93F82_mw/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1muoSC2fmHMo8Rf05JQgpyhs6XxkTjY0m/view?usp=drive_link"
     },
     "Водитель ALBERT ABAIKHANOV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/10D25opmpC3DDgeWYPri8HzHUQfAs3dU9/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1rEFHyVORCmCd5bOz7lCt9QJ8Ir2mzovN/view?usp=drive_link"
     },
     "Водитель SOSLAN GAGLOEV": {
-        "photo": "",
-        "files": ""
+        "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1dyDS9_vUxBnQqpkM8lQBRW0mGCQtHjt-/view?usp=drive_link"
     }
 }
 
