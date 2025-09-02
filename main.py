@@ -209,7 +209,7 @@ drivers_info = {
         "🚛 Truck Number: 15 \n"
         "🚂 Trailer Number: 15 \n"
         "🔑 VIN:3C63RRHL2RG341423 \n"
-        "⚓ Ramps: 8ft \n"
+        "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
