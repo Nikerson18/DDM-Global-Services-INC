@@ -37,7 +37,7 @@ dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель BULAT TSYRENOV"],
     "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель GREGORY GARBUZENCO"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA"],
-    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
+    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
 }
@@ -203,6 +203,16 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
+    "Водитель GRIGORII MOSKALETS": (
+        "📌 Driver Name: GRIGORII MOSKALETS \n"
+        "📞 Phone Number: 754-284-6442 \n"
+        "🚛 Truck Number: 15 \n"
+        "🚂 Trailer Number: 15 \n"
+        "🔑 VIN:3C63RRHL2RG341423 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9000lb \n"
+        "🅱 Owner: Dumitru Ou"
+    ),
     "Водитель EVGENY SYROMITSKII": (
         "📌 Driver Name: EVGENY SYROMITSKII \n"
         "📞 Phone Number: 754-600-7170 \n"
@@ -350,6 +360,10 @@ drivers_files = {
     "Водитель DIONISIE COTOVICI": {
         "photo": "https://drive.google.com/file/d/15t4skooNi866yUtfnLNdcwZUm-AIupU7/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1Mty-C0YIjJedlzO2A3HUSPF15W68ivRz/view?usp=drive_link"
+    },
+    "Водитель GRIGORII MOSKALETS": {
+        "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/16FJ0UAhELZqUWqUQmneODYVKX_lDI3RR/view?usp=drive_link"
     },
     "Водитель EVGENY SYROMITSKII": {
         "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
