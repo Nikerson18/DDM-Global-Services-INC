@@ -263,7 +263,7 @@ drivers_info = {
         "⚖ Weight: 8700lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель SERGIU CIOBANU": (
+    "Водитель SERGEI CIOBANU": (
         "📌 Driver Name: SERGIU CIOBANU \n"
         "📞 Phone Number: 224-343-1680 \n"
         "🚛 Truck Number: 16 \n"
@@ -395,7 +395,7 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1InjrQgybbfXYM8cqiEcIAXV2h_dgmgSz/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1U4cQbMVK1lreT75ZDgTf_qAlt-1rjHgG/view?usp=drive_link"
     },
-    "Водитель SERGIU CIOBANU": {
+    "Водитель SERGEI CIOBANU": {
         "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1ZP9zCEHO8C8LXbb3x6yxYg6jhVbD8D_I/view?usp=drive_link"
     },
