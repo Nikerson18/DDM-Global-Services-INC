@@ -216,9 +216,9 @@ drivers_info = {
     "Водитель GRIGORII MOSKALETS": (
         "📌 Driver Name: GRIGORII MOSKALETS \n"
         "📞 Phone Number: 754-284-6442 \n"
-        "🚛 Truck Number: 15 \n"
-        "🚂 Trailer Number: 15 \n"
-        "🔑 VIN:3C63RRHL2RG341423 \n"
+        "🚛 Truck Number: 19 \n"
+        "🚂 Trailer Number: 27 \n"
+        "🔑 VIN:1GC4KTEY6SF341379 \n"
         "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
