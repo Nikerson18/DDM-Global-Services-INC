@@ -36,7 +36,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель BULAT TSYRENOV"],
     "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель GREGORY GARBUZENCO"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель MARIN GULIA"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель YERKEBULAN BOSHAIBEKOV", "Водитель SOSLAN ALBOROV"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
@@ -163,15 +163,15 @@ drivers_info = {
         "⚖ Weight: 8100lb \n"
         "🅱 Owner: Dumitru OU"
     ),
-    "Водитель MARIN GULIA": (
-        "📌 Driver Name: MARIN GULIA \n"
-        "📞 Phone Number: 916-912-7398 \n"
-        "🚛 Truck Number: 19 \n"
-        "🚂 Trailer Number: 19 \n"
-        "🔑 VIN:3C63RRGL2RG219808 \n"
-        "⚓ Ramps: Mega Ramps \n"
+    "Водитель SOSLAN ALBOROV": (
+        "📌 Driver Name: SOSLAN ALBOROV \n"
+        "📞 Phone Number: 904-577-3670 \n"
+        "🚛 Truck Number: 15 \n"
+        "🚂 Trailer Number: 15 \n"
+        "🔑 VIN:3C63RRHL2RG388967 \n"
+        "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Owner Operator"
+        "🅱 Owner: "
     ),
     "Водитель ERDEM DORZHIEV": (
         "📌 Driver Name: ERDEM DORZHIEV \n"
@@ -355,9 +355,9 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1mG7YPuGRjU8cFrKPxNW-1gw2-3AwQYoe/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1sho0q6vXp8XS1e1z2yORpdmy0khSrbqF/view?usp=drive_link"
     },
-    "Водитель MARIN GULIA": {
-        "photo": "https://drive.google.com/file/d/1gNGy-qOQQUd7W_DljwzbOBiEM473il1e/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Rhf0fj_nzjUa-mWcMurFCXzuqxeHKw0m/view?usp=drive_link"
+    "Водитель SOSLAN ALBOROV": {
+        "photo": "https://drive.google.com/file/d/1DIyt2OsfPobeWOdoJ4xAEQLugdRAPaDs/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1qkehe1UDFOwQ0yguuTvSBv2P1bTbE-c8/view?usp=drive_link"
     },
     "Водитель ERDEM DORZHIEV": {
         "photo": "https://drive.google.com/file/d/1-xI2Xysnd19jiFp65Fwu4XenVHKjbAut/view?usp=drive_link",
