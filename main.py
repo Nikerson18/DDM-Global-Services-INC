@@ -218,7 +218,7 @@ drivers_info = {
         "📞 Phone Number: 754-284-6442 \n"
         "🚛 Truck Number: 19 \n"
         "🚂 Trailer Number: 27 \n"
-        "🔑 VIN:1GC4KTEY6SF341379 \n"
+        "🔑 VIN:1GC4KTEY4SF336343 \n"
         "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
