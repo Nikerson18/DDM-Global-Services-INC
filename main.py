@@ -216,7 +216,7 @@ drivers_info = {
     "Водитель GRIGORII MOSKALETS": (
         "📌 Driver Name: GRIGORII MOSKALETS \n"
         "📞 Phone Number: 754-284-6442 \n"
-        "🚛 Truck Number: 19 \n"
+        "🚛 Truck Number: 18 \n"
         "🚂 Trailer Number: 27 \n"
         "🔑 VIN:1GC4KTEY4SF336343 \n"
         "⚓ Ramps: 12ft \n"
@@ -377,7 +377,7 @@ drivers_files = {
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/14dxhV3OyySI1L_sx2L1fEL2s02Q4_qqJ/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1Bsy_9x_zZdQdioHDvde8yuDqLAnmdFmt/view?usp=drive_link"
     },
     "Водитель EVGENY SYROMITSKII": {
         "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
