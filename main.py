@@ -153,16 +153,6 @@ drivers_info = {
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
     ),
-    "Водитель YERKEBULAN BOSHAIBEKOV": (
-        "📌 Driver Name: YERKEBULAN BOSHAIBEKOV \n"
-        "📞 Phone Number: 773-751-9292 \n"
-        "🚛 Truck Number: 15 \n"
-        "🚂 Trailer Number: 15 \n"
-        "🔑 VIN:3C63RRHL2RG341423 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 8100lb \n"
-        "🅱 Owner: Dumitru OU"
-    ),
     "Водитель SOSLAN ALBOROV": (
         "📌 Driver Name: SOSLAN ALBOROV \n"
         "📞 Phone Number: 904-577-3670 \n"
@@ -350,10 +340,6 @@ drivers_files = {
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1Vhz7b_i7_kTZeSvw7XRVhFW9rM6ePkic/view?usp=drive_link"
-    },
-    "Водитель YERKEBULAN BOSHAIBEKOV": {
-        "photo": "https://drive.google.com/file/d/1mG7YPuGRjU8cFrKPxNW-1gw2-3AwQYoe/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1sho0q6vXp8XS1e1z2yORpdmy0khSrbqF/view?usp=drive_link"
     },
     "Водитель SOSLAN ALBOROV": {
         "photo": "https://drive.google.com/file/d/1DIyt2OsfPobeWOdoJ4xAEQLugdRAPaDs/view?usp=drive_link",
