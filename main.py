@@ -354,7 +354,7 @@ drivers_files = {
         "files": "https://drive.google.com/file/d/1YyluJIYytnh7DssNocZPfqvJsMwnVR8E/view?usp=drive_link"
     },
     "Водитель OLEG RESHAEV": {
-        "photo": "https://drive.google.com/file/d/1DHJ2H1BlcwDFzCdTkC2-4gPSSgn3eePE/view?usp=drive_link",
+        "photo": "https://drive.google.com/file/d/1hh9pjA3WKuW1y6lMqEjQ5MI8oVgJsUXq/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1sMQYx819pI9DRtoh6bK1oBYtBMDl4Zhi/view?usp=drive_link"
     },
     "Водитель DIONISIE COTOVICI": {
