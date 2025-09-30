@@ -39,7 +39,7 @@ dispatchers = {
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель SOSLAN ALBOROV"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
-    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
+    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель Saad Abdalla", "Водитель Fikrie Fente", "Водитель Mastewal Tigabu"]
 }
 
 drivers_info = {
@@ -292,6 +292,39 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
+    ),
+    "Водитель Saad Abdalla": (
+        "📌 Driver Name: Saad Abdalla \n"
+        "📞 Phone Number: 971-978-8636 \n"
+        "🚛 Truck Number: 19 \n"
+        "🚂 Trailer Number: 162636 \n"
+        "🔑 VIN:3AKJHHDR8KSKF3596 \n"
+        "🚍 Type: Reefer \n"
+        "⚓ Ramps: n/a \n"
+        "⚖ Weight: 43500lb \n"
+        "🅱 Owner: Company Driver"
+    ),
+    "Водитель Fikrie Fente": (
+        "📌 Driver Name: Fikrie Fente \n"
+        "📞 Phone Number: 206-779-8132 \n"
+        "🚛 Truck Number: 2121 \n"
+        "🚂 Trailer Number: 161729 \n"
+        "🔑 VIN:3AKJHHDRXJSJL7206 \n"
+        "🚍 Type: Reefer \n"
+        "⚓ Ramps: n/a \n"
+        "⚖ Weight: 43500lb \n"
+        "🅱 Owner: Company Driver "
+    ),
+    "Водитель Mastewal Tigabu": (
+        "📌 Driver Name: Mastewal Tigabu \n"
+        "📞 Phone Number: 646-322-1626 \n"
+        "🚛 Truck Number: 2021 \n"
+        "🚂 Trailer Number: 37013 \n"
+        "🔑 VIN:3AKJHHDR7LSLL1131 \n"
+        "🚍 Type: Dry Van \n"
+        "⚓ Ramps: n/a \n"
+        "⚖ Weight: 44000 \n"
+        "🅱 Owner: Owner "
     )
 }
 
@@ -396,6 +429,18 @@ drivers_files = {
     "Водитель SOSLAN GAGLOEV": {
         "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1dyDS9_vUxBnQqpkM8lQBRW0mGCQtHjt-/view?usp=drive_link"
+    },
+      "Водитель Saad Abdalla": {
+        "photo": "https://drive.google.com/file/d/1uUr6Cr7HHnzgh9EtOp6CvAyfrY2F4b-k/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1XKwMWs75LNtIrcH4yWSqWUIrPub65gTv/view?usp=drive_link"
+    },
+    "Водитель Fikrie Fente": {
+        "photo": "https://drive.google.com/file/d/17FTmRBJUPNksrjREuaEzcP6WE8TDYEeA/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1GqE_6LjwN3pG8hLYtyMMNsTbyiwYvmF9/view?usp=drive_link"
+    },
+    "Водитель Mastewal Tigabu": {
+        "photo": "https://drive.google.com/file/d/18KVx8L2_T579bz8AKqCGw0NoDiGj63tE/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1hLtlcAmz4W8ju9S2jFT5nVClWjMenMTv/view?usp=drive_link"
     }
 }
 
