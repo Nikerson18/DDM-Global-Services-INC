@@ -395,7 +395,7 @@ drivers_files = {
         "files": "https://drive.google.com/file/d/1Mty-C0YIjJedlzO2A3HUSPF15W68ivRz/view?usp=drive_link"
     },
     "Водитель GRIGORII MOSKALETS": {
-        "photo": "https://drive.google.com/file/d/13kkj2hoPUbK2-8O7RlWCvuDNDnb17Pgy/view?usp=drive_link",
+        "photo": "https://drive.google.com/file/d/1BKyWXI6KqUz_QHBHUZjJluL7LPbd1CxN/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1Bsy_9x_zZdQdioHDvde8yuDqLAnmdFmt/view?usp=drive_link"
     },
     "Водитель EVGENY SYROMITSKII": {
