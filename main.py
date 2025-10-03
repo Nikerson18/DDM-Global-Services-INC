@@ -34,12 +34,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BAIR DABAIN", "Водитель BILIKTO LAMATKHANOV", "Водитель BULAT TSYRENOV"],
-    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель GREGORY GARBUZENCO"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель SOSLAN ALBOROV"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель Mastewal Tigabu"],
+    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель Fikrie Fente"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель Saad Abdalla"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель IGOR BALAKIN", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
-    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель Saad Abdalla", "Водитель Fikrie Fente", "Водитель Mastewal Tigabu"]
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
+    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель SOSLAN ALBOROV"]
 }
 
 drivers_info = {
@@ -72,26 +72,6 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
-    ),
-    "Водитель BAIR DABAIN": (
-        "📌 Driver Name: BAIR DABAIN \n"
-        "📞 Phone Number: 470-978-5585 \n"
-        "🚛 Truck Number: 10 \n"
-        "🚂 Trailer Number: 10 \n"
-        "🔑 VIN:3C63RRGL6RG109909 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9500lb \n"
-        "🅱 Owner: Alexei Lamatkhanov"
-    ),
-    "Водитель BULAT TSYRENOV": (
-        "📌 Driver Name: BULAT TSYRENOV \n"
-        "📞 Phone Number: 929-503-2150 \n"
-        "🚛 Truck Number: 40 \n"
-        "🚂 Trailer Number: 40 \n"
-        "🔑 VIN:1FT8W3DT6SED46521 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9800lb \n"
-        "🅱 Owner: Owner Operator "
     ),
     "Водитель OLEH SEMENENKO": (
         "📌 Driver Name: OLEH SEMENENNKO \n"
@@ -132,16 +112,6 @@ drivers_info = {
         "⚓ Ramps: n/a \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
-    ),
-      "Водитель GREGORY GARBUZENCO": (
-        "📌 Driver Name: GREGORY GARBUZENCO \n"
-        "📞 Phone Number: 470-301-8232 \n"
-        "🚛 Truck Number: 120 \n"
-        "🚂 Trailer Number: 12 \n"
-        "🔑 VIN:1FT8W3DT9SEC54495 \n"
-        "⚓ Ramps: 14ft \n"
-        "⚖ Weight: 9300lb \n"
-        "🅱 Owner: Owner Operator"
     ),
     "Водитель DARMAN ORUZBAEV": (
         "📌 Driver Name: DARMAN ORUZBAEV \n"
@@ -243,16 +213,6 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель IGOR BALAKIN": (
-        "📌 Driver Name: IGOR BALAKIN \n"
-        "📞 Phone Number: 331-229-8750 \n"
-        "🚛 Truck Number: 6 \n"
-        "🚂 Trailer Number: 20 \n"
-        "🔑 VIN:1GC4KTEY4SF336343 \n"
-        "⚓ Ramps: Mega Ramps \n"
-        "⚖ Weight: 8700lb \n"
-        "🅱 Owner: Owner Operator"
-    ),
     "Водитель SERGEI CIOBANU": (
         "📌 Driver Name: SERGIU CIOBANU \n"
         "📞 Phone Number: 224-343-1680 \n"
@@ -342,14 +302,6 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1wFHZryy0XO1sNrF5uMBokhMLaWTjsx-k/view?usp=drive_link"
     },
-    "Водитель BAIR DABAIN": {
-        "photo": "https://drive.google.com/file/d/1EiLW7-ITrIKjqefHMU1MtHBTwFM-V7yG/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1qu93gInvYFyNjfDSMeOrwWEC2x7Yo-Sw/view?usp=drive_link"
-    },
-    "Водитель BULAT TSYRENOV": {
-        "photo": "https://drive.google.com/file/d/1TOUmyWOSc4VZb5-ndzh85rjm8UAkoqAT/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1yTNFdriNPquqiuX73q2Q8X55qLIE7SNo/view?usp=drive_link"
-    },
     "Водитель OLEH SEMENENKO": {
         "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1355yJvYbY8onkEGG5-sRFvK2Rhxu15Ii/view?usp=drive_link"
@@ -365,10 +317,6 @@ drivers_files = {
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1tbbt12v_jmVZL9e0v9eGmYHLa2HQkYWv/view?usp=drive_link"
-    },
-      "Водитель GREGORY GARBUZENCO": {
-        "photo": "https://drive.google.com/file/d/1pNAgo7rTk5HXQEV4Lv2bIyjnnmTqQXWF/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1TD9fzc3wHHNSCzzI6xiOrLj-UnWpHW1W/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
@@ -409,10 +357,6 @@ drivers_files = {
     "Водитель GEORGII RIONELI": {
         "photo": "https://drive.google.com/file/d/1gi0RkYOlGyH_TSgs0MhTATcNsaamiyJD/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1keW4Iuhc72asf0PnfO_cnzAHoAhfhgOA/view?usp=drive_link"
-    },
-    "Водитель IGOR BALAKIN": {
-        "photo": "https://drive.google.com/file/d/1InjrQgybbfXYM8cqiEcIAXV2h_dgmgSz/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1U4cQbMVK1lreT75ZDgTf_qAlt-1rjHgG/view?usp=drive_link"
     },
     "Водитель SERGEI CIOBANU": {
         "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
