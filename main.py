@@ -146,9 +146,9 @@ drivers_info = {
     "Водитель DIONISIE COTOVICI": (
         "📌 Driver Name: DIONISIE COTOVICI \n"
         "📞 Phone Number: 954-295-6482 \n"
-        "🚛 Truck Number: 18 \n"
-        "🚂 Trailer Number: 18 \n"
-        "🔑 VIN:3C63RRHL2RG289632 \n"
+        "🚛 Truck Number: 15 \n"
+        "🚂 Trailer Number: 12 \n"
+        "🔑 VIN:1FT8W3DT3TEC24331 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
@@ -316,7 +316,7 @@ drivers_files = {
     },
     "Водитель DIONISIE COTOVICI": {
         "photo": "https://drive.google.com/file/d/15t4skooNi866yUtfnLNdcwZUm-AIupU7/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Mty-C0YIjJedlzO2A3HUSPF15W68ivRz/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1yX3Xe-xpntIBdAekzRZmvCWeDvF0rVHs/view?usp=drive_link"
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/1BKyWXI6KqUz_QHBHUZjJluL7LPbd1CxN/view?usp=drive_link",
