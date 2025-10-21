@@ -179,8 +179,8 @@ drivers_info = {
         "🚛 Truck Number: 23 \n"
         "🚂 Trailer Number: 23 \n"
         "🔑 VIN:3C63RRHL1RG289668 \n"
-        "⚓ Ramps: 10ft \n"
-        "⚖ Weight: 9000lb \n"
+        "⚓ Ramps: 12ft \n"
+        "⚖ Weight: 9200lb \n"
         "🅱 Owner: Alex"
     ),
     "Водитель DIONISIE COTOVICI": (
@@ -189,8 +189,8 @@ drivers_info = {
         "🚛 Truck Number: 15 \n"
         "🚂 Trailer Number: 12 \n"
         "🔑 VIN:1FT8W3DT3TEC24331 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9000lb \n"
+        "⚓ Ramps: 12ft \n"
+        "⚖ Weight: 9500lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
     "Водитель GRIGORII MOSKALETS": (
@@ -200,7 +200,7 @@ drivers_info = {
         "🚂 Trailer Number: 27 \n"
         "🔑 VIN:1FT8W3DT9SEC54495 \n"
         "⚓ Ramps: 12ft \n"
-        "⚖ Weight: 9000lb \n"
+        "⚖ Weight: 9400lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
     "Водитель EVGENY SYROMITSKII": (
@@ -220,7 +220,7 @@ drivers_info = {
         "🚂 Trailer Number: 26 \n"
         "🔑 VIN:1FT8W3DT1RED22119 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight:  \n"
+        "⚖ Weight: 9800lb \n"
         "🅱 Owner: "
     ),
     "Водитель GEORGII RIONELI": (
