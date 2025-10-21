@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
-    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MYKOLA MYKYTYUK"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
@@ -122,6 +122,16 @@ drivers_info = {
         "⚓ Ramps: n/a \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
+    ),
+    "Водитель MYKOLA MYKYTYUK": (
+        "📌 Driver Name: MYKOLA MYKYTYUK \n"
+        "📞 Phone Number: 313-349-8477 \n"
+        "🚛 Truck Number: 6 \n"
+        "🚂 Trailer Number: 40 \n"
+        "🔑 VIN:1GC4KTEY6SF339163 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 8500lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель DARMAN ORUZBAEV": (
         "📌 Driver Name: DARMAN ORUZBAEV \n"
@@ -288,6 +298,10 @@ drivers_files = {
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1OPfSrp256GnBeTjZwOHF5wr5_w7o-QfP/view?usp=drive_link"
+    },
+    "Водитель MYKOLA MYKYTYUK": {
+        "photo": "https://drive.google.com/file/d/1w48QLL9mRPKqGkZ1blOyMfhp5kE67JaY/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1sJkHlKcexUdkh0RbPcTP27A7Z10DlVkE/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
