@@ -119,8 +119,8 @@ drivers_info = {
         "🚛 Truck Number: 27 \n"
         "🚂 Trailer Number: 37 \n"
         "🔑 VIN:1GC4KTEYXSF340641 \n"
-        "⚓ Ramps: n/a \n"
-        "⚖ Weight: 8500lb \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 8640lb \n"
         "🅱 Owner: Alex"
     ),
     "Водитель MYKOLA MYKYTYUK": (
@@ -130,7 +130,7 @@ drivers_info = {
         "🚂 Trailer Number: 40 \n"
         "🔑 VIN:1GC4KTEY6SF339163 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 8500lb \n"
+        "⚖ Weight: 9380lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель DARMAN ORUZBAEV": (
@@ -220,7 +220,7 @@ drivers_info = {
         "🚂 Trailer Number: 26 \n"
         "🔑 VIN:1FT8W3DT1RED22119 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9800lb \n"
+        "⚖ Weight: 10000lb \n"
         "🅱 Owner: "
     ),
     "Водитель GEORGII RIONELI": (
