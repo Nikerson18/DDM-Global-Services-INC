@@ -156,9 +156,9 @@ drivers_info = {
     "Водитель GRIGORII MOSKALETS": (
         "📌 Driver Name: GRIGORII MOSKALETS \n"
         "📞 Phone Number: 754-284-6442 \n"
-        "🚛 Truck Number: 18 \n"
+        "🚛 Truck Number: 120 \n"
         "🚂 Trailer Number: 27 \n"
-        "🔑 VIN:1GC4KTEY4SF336343 \n"
+        "🔑 VIN:1FT8W3DT9SEC54495 \n"
         "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Dumitru Ou"
@@ -320,7 +320,7 @@ drivers_files = {
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/1BKyWXI6KqUz_QHBHUZjJluL7LPbd1CxN/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Bsy_9x_zZdQdioHDvde8yuDqLAnmdFmt/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/14LAC43biwNbVdtC1BYYPAJuVBXl41Fai/view?usp=drive_link"
     },
     "Водитель EVGENY SYROMITSKII": {
         "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
