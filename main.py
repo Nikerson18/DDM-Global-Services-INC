@@ -36,7 +36,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
     "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MYKOLA MYKYTYUK"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель CARVIS SMITH Jr"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": ["Водитель SOSLAN ALBOROV"]
@@ -162,6 +162,16 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Stas"
+    ),
+    "Водитель CARVIS SMITH Jr": (
+        "📌 Driver Name: CARVIS SMITH Jr \n"
+        "📞 Phone Number: 616 323 7906 \n"
+        "🚛 Truck Number: 8 \n"
+        "🚂 Trailer Number: 1 \n"
+        "🔑 VIN:3C63RPGL7DG611096 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 10000lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель OLEG RESHAEV": (
         "📌 Driver Name: OLEG RESHAEV \n"
@@ -318,6 +328,10 @@ drivers_files = {
     "Водитель TOTRAZ ABAEV": {
         "photo": "https://drive.google.com/file/d/1ymKwY80eRZziGw8svzLw3ZSsLC4QorcX/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1YyluJIYytnh7DssNocZPfqvJsMwnVR8E/view?usp=drive_link"
+    },
+   "Водитель CARVIS SMITH Jr": {
+        "photo": "https://drive.google.com/file/d/1pEsL092Q2Db129Xv8_hP8bts04gQzqy8/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1fGcK_fE66WzNZcs8Ft8mlPWTBhFdDenY/view?usp=drive_link"
     },
     "Водитель OLEG RESHAEV": {
         "photo": "https://drive.google.com/file/d/1hh9pjA3WKuW1y6lMqEjQ5MI8oVgJsUXq/view?usp=drive_link",
