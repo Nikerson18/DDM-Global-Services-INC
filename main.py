@@ -34,9 +34,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель Mastewal Tigabu"],
-    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель Fikrie Fente"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель Saad Abdalla"],
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": ["Водитель SOSLAN ALBOROV"]
@@ -72,6 +72,26 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
+    ),
+    "Водитель ALEXANDER ARBUZOV": (
+        "📌 Driver Name: ALEXANDER ARBUZOV \n"
+        "📞 Phone Number: 20 \n"
+        "🚛 Truck Number: 20 \n"
+        "🚂 Trailer Number: 765-568-3634 \n"
+        "🔑 VIN:3C63RRJL6JG267700 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9200lb \n"
+        "🅱 Owner: Dumitru Ou"
+    ),
+    "Водитель RUSLAN SATBAYEV": (
+        "📌 Driver Name: RUSLAN SATBAYEV \n"
+        "📞 Phone Number: 12 \n"
+        "🚛 Truck Number: 42 \n"
+        "🚂 Trailer Number: 786-651-9828 \n"
+        "🔑 VIN:1FT8W3DT6TEC23349 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9200lb \n"
+        "🅱 Owner: Sergiu 773-408-8162"
     ),
     "Водитель OLEH SEMENENKO": (
         "📌 Driver Name: OLEH SEMENENNKO \n"
@@ -232,39 +252,6 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
-    ),
-    "Водитель Saad Abdalla": (
-        "📌 Driver Name: Saad Abdalla \n"
-        "📞 Phone Number: 971-978-8636 \n"
-        "🚛 Truck Number: 19 \n"
-        "🚂 Trailer Number: 162636 \n"
-        "🔑 VIN:3AKJHHDR8KSKF3596 \n"
-        "🚍 Type: Reefer \n"
-        "⚓ Ramps: n/a \n"
-        "⚖ Weight: 43500lb \n"
-        "🅱 Owner: Company Driver"
-    ),
-    "Водитель Fikrie Fente": (
-        "📌 Driver Name: Fikrie Fente \n"
-        "📞 Phone Number: 206-779-8132 \n"
-        "🚛 Truck Number: 2121 \n"
-        "🚂 Trailer Number: 161729 \n"
-        "🔑 VIN:3AKJHHDRXJSJL7206 \n"
-        "🚍 Type: Reefer \n"
-        "⚓ Ramps: n/a \n"
-        "⚖ Weight: 43500lb \n"
-        "🅱 Owner: Company Driver "
-    ),
-    "Водитель Mastewal Tigabu": (
-        "📌 Driver Name: Mastewal Tigabu \n"
-        "📞 Phone Number: 646-322-1626 \n"
-        "🚛 Truck Number: 2021 \n"
-        "🚂 Trailer Number: 37013 \n"
-        "🔑 VIN:3AKJHHDR7LSLL1131 \n"
-        "🚍 Type: Dry Van \n"
-        "⚓ Ramps: n/a \n"
-        "⚖ Weight: 44000 \n"
-        "🅱 Owner: Owner "
     )
 }
 
@@ -281,6 +268,14 @@ drivers_files = {
     "Водитель ALEKSANDR PAVLOV": {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1wFHZryy0XO1sNrF5uMBokhMLaWTjsx-k/view?usp=drive_link"
+    },
+    "Водитель ALEXANDER ARBUZOV": {
+        "photo": "https://drive.google.com/file/d/1hLatH-VAeTsUWYlFXVsGTsY0qQu8xQg9/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1bE6dcsFX1YDwm6Ws-GaeWbn7Xcpqm0ku/view?usp=drive_link"
+    },
+    "Водитель RUSLAN SATBAYEV": {
+        "photo": "https://drive.google.com/file/d/1QdoekziBT4Ig5UlvlQtRIQsBR86f1JCQ/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1nRUum9Vk021IMrrPC3_--ukSo7ZLDZSQ/view?usp=drive_link"
     },
     "Водитель OLEH SEMENENKO": {
         "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
@@ -349,18 +344,6 @@ drivers_files = {
     "Водитель SOSLAN GAGLOEV": {
         "photo": "https://drive.google.com/file/d/1GvuTMUKgNdgcR9bsmThZR9dx7bvZCgEY/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1dyDS9_vUxBnQqpkM8lQBRW0mGCQtHjt-/view?usp=drive_link"
-    },
-      "Водитель Saad Abdalla": {
-        "photo": "https://drive.google.com/file/d/1uUr6Cr7HHnzgh9EtOp6CvAyfrY2F4b-k/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1XKwMWs75LNtIrcH4yWSqWUIrPub65gTv/view?usp=drive_link"
-    },
-    "Водитель Fikrie Fente": {
-        "photo": "https://drive.google.com/file/d/17FTmRBJUPNksrjREuaEzcP6WE8TDYEeA/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1GqE_6LjwN3pG8hLYtyMMNsTbyiwYvmF9/view?usp=drive_link"
-    },
-    "Водитель Mastewal Tigabu": {
-        "photo": "https://drive.google.com/file/d/18KVx8L2_T579bz8AKqCGw0NoDiGj63tE/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1hLtlcAmz4W8ju9S2jFT5nVClWjMenMTv/view?usp=drive_link"
     }
 }
 
