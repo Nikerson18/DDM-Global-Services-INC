@@ -38,8 +38,8 @@ dispatchers = {
     "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель Fikrie Fente"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель Saad Abdalla"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
-    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV", "Водитель SOSLAN ALBOROV"]
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
+    "✈ Диспетчер Max": ["Водитель SOSLAN ALBOROV"]
 }
 
 drivers_info = {
@@ -193,14 +193,14 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель SERGEI CIOBANU": (
-        "📌 Driver Name: SERGIU CIOBANU \n"
+    "Водитель SERGHEI CIOBANU": (
+        "📌 Driver Name: SERGHEI CIOBANU \n"
         "📞 Phone Number: 224-343-1680 \n"
         "🚛 Truck Number: 16 \n"
         "🚂 Trailer Number: 38 \n"
         "🔑 VIN:3C63RRHL7RG337075 \n"
-        "⚓ Ramps:  \n"
-        "⚖ Weight:  \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 10000lb \n"
         "🅱 Owner: "
     ),
     "Водитель TAULAN TOTORKULOV": (
@@ -334,9 +334,9 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1gi0RkYOlGyH_TSgs0MhTATcNsaamiyJD/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1keW4Iuhc72asf0PnfO_cnzAHoAhfhgOA/view?usp=drive_link"
     },
-    "Водитель SERGEI CIOBANU": {
+    "Водитель SERGHEI CIOBANU": {
         "photo": "https://drive.google.com/file/d/1B5yeo6F1-IiQiAXYuzc3lG8VbQsfNCxR/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1ZP9zCEHO8C8LXbb3x6yxYg6jhVbD8D_I/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1YyD-xu-FXuRxNfRKfbNJMO6acFeVboyu/view?usp=drive_link"
     },
     "Водитель TAULAN TOTORKULOV": {
         "photo": "https://drive.google.com/file/d/1hrVycBVGxxXq9-aNZWfW40hk93F82_mw/view?usp=drive_link",
