@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель Mastewal Tigabu"],
-    "🚌 Диспетчер Serghei": ["Водитель LATIPOV PARVIZ", "Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель Fikrie Fente"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель Fikrie Fente"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель Saad Abdalla"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
@@ -83,16 +83,6 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Radu"
     ),
-    "Водитель LATIPOV PARVIZ": (
-        "📌 Driver Name: LATIPOV PARVIZ \n"
-        "📞 Phone Number: 267-574-4243 \n"
-        "🚛 Truck Number: 7 \n"
-        "🚂 Trailer Number: 7 \n"
-        "🔑 VIN:1FT8W3DT7SED01359 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9000lb \n"
-        "🅱 Owner: Owner Operator"
-    ),
     "Водитель ILLIA HORBATOK": (
         "📌 Driver Name: ILLIA HORBATOK \n"
         "📞 Phone Number: 701-403-0994 \n"
@@ -106,9 +96,9 @@ drivers_info = {
     "Водитель (DOS) DASTAN MASYLKANOV": (
         "📌 Driver Name: DASTAN MASYLKANOV \n"
         "📞 Phone Number: 917-704-3848 \n"
-        "🚛 Truck Number: 37 \n"
+        "🚛 Truck Number: 27 \n"
         "🚂 Trailer Number: 37 \n"
-        "🔑 VIN:3C63RRHL6RG307632 \n"
+        "🔑 VIN:1GC4KTEYXSF340641 \n"
         "⚓ Ramps: n/a \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
@@ -123,22 +113,12 @@ drivers_info = {
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex"
     ),
-    "Водитель SOSLAN ALBOROV": (
-        "📌 Driver Name: SOSLAN ALBOROV \n"
-        "📞 Phone Number: 904-577-3670 \n"
-        "🚛 Truck Number: 15 \n"
-        "🚂 Trailer Number: 15 \n"
-        "🔑 VIN:3C63RRHL2RG388967 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9500lb \n"
-        "🅱 Owner: "
-    ),
     "Водитель ERDEM DORZHIEV": (
         "📌 Driver Name: ERDEM DORZHIEV \n"
         "📞 Phone Number: 412-304-4565 \n"
-        "🚛 Truck Number: 8 \n"
+        "🚛 Truck Number: 1 \n"
         "🚂 Trailer Number: 8 \n"
-        "🔑 VIN:3C63R3GL6NG159989 \n"
+        "🔑 VIN:3C63RRGL2SG526742 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Owner Operator"
@@ -306,17 +286,13 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1355yJvYbY8onkEGG5-sRFvK2Rhxu15Ii/view?usp=drive_link"
     },
-    "Водитель LATIPOV PARVIZ": {
-        "photo": "https://drive.google.com/file/d/1xdc15lyPYEd-rTVWjq5wlun3U2Xoi6Nn/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1sOUMQjtE-DnTY4wGI9xvHiURC3suAstD/view?usp=drive_link"
-    },
     "Водитель ILLIA HORBATOK": {
         "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1IWQ-TKERVegzJ6y4GWVj1qXeg6DUuNZw/view?usp=drive_link"
     },
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1tbbt12v_jmVZL9e0v9eGmYHLa2HQkYWv/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1OPfSrp256GnBeTjZwOHF5wr5_w7o-QfP/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
@@ -328,7 +304,7 @@ drivers_files = {
     },
     "Водитель ERDEM DORZHIEV": {
         "photo": "https://drive.google.com/file/d/1-xI2Xysnd19jiFp65Fwu4XenVHKjbAut/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Mq1q3bF9-UVpVD5yZ0zZzqV5ZpbOLVj0/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1oiI50PVqoaNe1efDTzj5WaAokGqK5eZL/view?usp=drive_link"
     },
     "Водитель TOTRAZ ABAEV": {
         "photo": "https://drive.google.com/file/d/1ymKwY80eRZziGw8svzLw3ZSsLC4QorcX/view?usp=drive_link",
