@@ -39,7 +39,7 @@ dispatchers = {
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель CARVIS SMITH Jr"],
     "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
-    "✈ Диспетчер Max": ["Водитель SOSLAN ALBOROV"]
+    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
 }
 
 drivers_info = {
