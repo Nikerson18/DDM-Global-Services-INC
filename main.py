@@ -85,9 +85,9 @@ drivers_info = {
     ),
     "Водитель RUSLAN SATBAYEV": (
         "📌 Driver Name: RUSLAN SATBAYEV \n"
-        "📞 Phone Number: 12 \n"
-        "🚛 Truck Number: 42 \n"
-        "🚂 Trailer Number: 786-651-9828 \n"
+        "📞 Phone Number: 786-651-9828 \n"
+        "🚛 Truck Number: 12 \n"
+        "🚂 Trailer Number: 42 \n"
         "🔑 VIN:1FT8W3DT6TEC23349 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9200lb \n"
