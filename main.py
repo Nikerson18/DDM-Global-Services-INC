@@ -75,9 +75,9 @@ drivers_info = {
     ),
     "Водитель ALEXANDER ARBUZOV": (
         "📌 Driver Name: ALEXANDER ARBUZOV \n"
-        "📞 Phone Number: 20 \n"
+        "📞 Phone Number: 765-568-3634 \n"
         "🚛 Truck Number: 20 \n"
-        "🚂 Trailer Number: 765-568-3634 \n"
+        "🚂 Trailer Number: 20 \n"
         "🔑 VIN:3C63RRJL6JG267700 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9200lb \n"
