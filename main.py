@@ -462,7 +462,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # можно было бы добавить условия data.startswith("photo_") и data.startswith("files_").)
 
 # Создание и запуск приложения Telegram Bot
-app = Application.builder().token("7931949571:AAHySrzhF86Kk0j1SIWHApQhDoVtuLOiyAM").build()
+app = Application.builder().token("7656171707:AAEuL0NcHIFsAG5vRgYZ2GizY0JQN4kQwRc").build()
 
 # Регистрация обработчиков
 app.add_handler(CommandHandler("start", start))
