@@ -37,7 +37,7 @@ dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
     "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MYKOLA MYKYTYUK"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель CARVIS SMITH Jr"],
-    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель DIONISIE COTOVICI", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
+    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", ],
     "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
 }
@@ -183,14 +183,14 @@ drivers_info = {
         "⚖ Weight: 9200lb \n"
         "🅱 Owner: Alex"
     ),
-    "Водитель DIONISIE COTOVICI": (
-        "📌 Driver Name: DIONISIE COTOVICI \n"
-        "📞 Phone Number: 954-295-6482 \n"
+    "Водитель BALZHIR RINCHINDORZHIEV": (
+        "📌 Driver Name: BALZHIR RINCHINDORZHIEV \n"
+        "📞 Phone Number: 312-481-1956 \n"
         "🚛 Truck Number: 15 \n"
         "🚂 Trailer Number: 12 \n"
         "🔑 VIN:1FT8W3DT3TEC24331 \n"
         "⚓ Ramps: 12ft \n"
-        "⚖ Weight: 9500lb \n"
+        "⚖ Weight: 9100lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
     "Водитель GRIGORII MOSKALETS": (
@@ -337,8 +337,8 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1hh9pjA3WKuW1y6lMqEjQ5MI8oVgJsUXq/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1sMQYx819pI9DRtoh6bK1oBYtBMDl4Zhi/view?usp=drive_link"
     },
-    "Водитель DIONISIE COTOVICI": {
-        "photo": "https://drive.google.com/file/d/15t4skooNi866yUtfnLNdcwZUm-AIupU7/view?usp=drive_link",
+    "Водитель BALZHIR RINCHINDORZHIEV": {
+        "photo": "https://drive.google.com/file/d/1fi0Erh2cT-f8PzNWq9Nzrk8gQC5pwgX7/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1yX3Xe-xpntIBdAekzRZmvCWeDvF0rVHs/view?usp=drive_link"
     },
     "Водитель GRIGORII MOSKALETS": {
