@@ -183,6 +183,16 @@ drivers_info = {
         "⚖ Weight: 9200lb \n"
         "🅱 Owner: Alex Bizga"
     ),
+    "Водитель RAMZAN DZHABRAILOV": (
+        "📌 Driver Name: RAMZAN DZHABRAILOV \n"
+        "📞 Phone Number: 786 960 2200 \n"
+        "🚛 Truck Number: 23 \n"
+        "🚂 Trailer Number: 23 \n"
+        "🔑 VIN:1FT8W3DT0SED25518 \n"
+        "⚓ Ramps: 12ft \n"
+        "⚖ Weight: 9200lb \n"
+        "🅱 Owner: Alex Bizga"
+    ),
     "Водитель BALZHIR RINCHINDORZHIEV": (
         "📌 Driver Name: BALZHIR RINCHINDORZHIEV \n"
         "📞 Phone Number: 312-481-1956 \n"
@@ -335,6 +345,10 @@ drivers_files = {
     },
     "Водитель OLEG RESHAEV": {
         "photo": "https://drive.google.com/file/d/1hh9pjA3WKuW1y6lMqEjQ5MI8oVgJsUXq/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1sMQYx819pI9DRtoh6bK1oBYtBMDl4Zhi/view?usp=drive_link"
+    },
+    "Водитель RAMZAN DZHABRAILOV": {
+        "photo": "https://drive.google.com/file/d/1UL68GNL2n_QgqNO4dM__4l_wWvR9M0QB/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1sMQYx819pI9DRtoh6bK1oBYtBMDl4Zhi/view?usp=drive_link"
     },
     "Водитель BALZHIR RINCHINDORZHIEV": {
