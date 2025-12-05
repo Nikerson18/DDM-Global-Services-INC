@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
-    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
     "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV", "Водитель RAMZAN DZHABRAILOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
@@ -213,8 +213,8 @@ drivers_info = {
         "⚖ Weight: 8800lb \n"
         "🅱 Owner: Radu Bragari"
     ),
-    "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL": (
-        "📌 Driver Name: AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL \n"
+    "Водители AIDAR & GUZEL": (
+        "📌 Driver Name: AIDAR KHABIBULLIN и SHARAFUTDINOVA GUZEL \n"
         "📞 Phone Number: 619-951-6457 and 619-951-6836 \n"
         "🚛 Truck Number: 3 \n"
         "🚂 Trailer Number: 3 \n"
@@ -349,7 +349,7 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1XwPSlu9JgUMg_q09fO1gWgjtCV1ZHno1/view?usp=drive_link"
     },
-    "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL": {
+    "Водители AIDAR & GUZEL": {
         "photo": "https://drive.google.com/file/d/1IayD23MhwuBumdnU0Elp0rt4nf8juqtb/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1Qnf4XsQi4foITTFYDohqif1JvqOCFtLi/view?usp=drive_link"
     },
