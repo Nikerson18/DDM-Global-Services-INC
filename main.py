@@ -34,12 +34,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
-    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель BILIKTO LAMATKHANOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
-    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель MYKOLA MYKYTYUK"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV"],
-    "🚂 Диспетчер Peter": ["Водитель OLEG RESHAEV", "Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель TAULAN TOTORKULOV", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
-    "✈ Диспетчер Max": ["Водитель SOSLAN GAGLOEV"]
+    "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
+    "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV", "Водитель RAMZAN DZHABRAILOV"],
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
+    "✈ Диспетчер Max": ["Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
 }
 
 drivers_info = {
@@ -52,16 +52,6 @@ drivers_info = {
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
-    ),
-    "Водитель BILIKTO LAMATKHANOV": (
-        "📌 Driver Name: BILIKTO LAMATKHANOV \n"
-        "📞 Phone Number: 224-716-4847 \n"
-        "🚛 Truck Number: 21 \n"
-        "🚂 Trailer Number: 21 \n"
-        "🔑 VIN:3C63RRGL3RG109933 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9000lb \n"
-        "🅱 Owner: Company"
     ),
     "Водитель ALEKSANDR PAVLOV": (
         "📌 Driver Name: ALEKSANDR PAVLOV \n"
@@ -81,7 +71,7 @@ drivers_info = {
         "🔑 VIN:3C63RRJL6JG267700 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9200lb \n"
-        "🅱 Owner: Dumitru Ou"
+        "🅱 Owner: Sergiu Zambrean"
     ),
     "Водитель RUSLAN SATBAYEV": (
         "📌 Driver Name: RUSLAN SATBAYEV \n"
@@ -91,7 +81,7 @@ drivers_info = {
         "🔑 VIN:1FT8W3DT6TEC23349 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9200lb \n"
-        "🅱 Owner: Sergiu 773-408-8162"
+        "🅱 Owner: Owner operator"
     ),
     "Водитель OLEH SEMENENKO": (
         "📌 Driver Name: OLEH SEMENENNKO \n"
@@ -101,7 +91,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL3RG301237 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9000lb \n"
-        "🅱 Owner: Radu"
+        "🅱 Owner: Radu Bragari"
     ),
     "Водитель ILLIA HORBATOK": (
         "📌 Driver Name: ILLIA HORBATOK \n"
@@ -111,7 +101,7 @@ drivers_info = {
         "🔑 VIN:3C63R3HL7RG339129 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8720lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Alex Bizga"
     ),
     "Водитель (DOS) DASTAN MASYLKANOV": (
         "📌 Driver Name: DASTAN MASYLKANOV \n"
@@ -121,7 +111,17 @@ drivers_info = {
         "🔑 VIN:1GC4KTEYXSF340641 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8640lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Alex Bizga"
+    ),
+    "Водитель NURLAN BAINEYEV": (
+        "📌 Driver Name: NURLAN BAINEYEV \n"
+        "📞 Phone Number: 305-434-2101 \n"
+        "🚛 Truck Number: 19 \n"
+        "🚂 Trailer Number: 30 \n"
+        "🔑 VIN: 1FT8W3DT3TEC72119 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 10000lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель MYKOLA MYKYTYUK": (
         "📌 Driver Name: MYKOLA MYKYTYUK \n"
@@ -141,7 +141,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHLXRG341413 \n"
         "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 8500lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Alex Bizga"
     ),
     "Водитель ERDEM DORZHIEV": (
         "📌 Driver Name: ERDEM DORZHIEV \n"
@@ -181,7 +181,7 @@ drivers_info = {
         "🔑 VIN:1FT8W3DT0SED25518 \n"
         "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9200lb \n"
-        "🅱 Owner: Alex"
+        "🅱 Owner: Alex Bizga"
     ),
     "Водитель BALZHIR RINCHINDORZHIEV": (
         "📌 Driver Name: BALZHIR RINCHINDORZHIEV \n"
@@ -211,7 +211,17 @@ drivers_info = {
         "🔑 VIN:3C63RRHL2RG108058 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8800lb \n"
-        "🅱 Owner: Radu"
+        "🅱 Owner: Radu Bragari"
+    ),
+    "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL": (
+        "📌 Driver Name: AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL \n"
+        "📞 Phone Number: 619-951-6457  and 619-951-6836 \n"
+        "🚛 Truck Number: 3 \n"
+        "🚂 Trailer Number: 3 \n"
+        "🔑 VIN:3C63RRGL0SG554913 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9400lb \n"
+        "🅱 Owner: Owner Operator"
     ),
     "Водитель RADZHAB MAGOMEDOV": (
         "📌 Driver Name: RADZHAB MAGOMEDOV \n"
@@ -221,7 +231,7 @@ drivers_info = {
         "🔑 VIN:1FT8W3DT1RED22119 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
-        "🅱 Owner: "
+        "🅱 Owner: Owner operator"
     ),
     "Водитель GEORGII RIONELI": (
         "📌 Driver Name: GEORGII RIONELI \n"
@@ -241,17 +251,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL7RG337075 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
-        "🅱 Owner: "
-    ),
-    "Водитель TAULAN TOTORKULOV": (
-        "📌 Driver Name: TAULAN TOTORKULOV \n"
-        "📞 Phone Number: 224-463-0235 \n"
-        "🚛 Truck Number: 5 \n"
-        "🚂 Trailer Number: 5 \n"
-        "🔑 VIN:3C63RRGL9KG700614 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9700lb \n"
-        "🅱 Owner: Owner Operator"
+        "🅱 Owner: Owner operator"
     ),
     "Водитель ALBERT ABAIKHANOV": (
         "📌 Driver Name: ALBERT ABAIKHANOV \n"
@@ -261,7 +261,7 @@ drivers_info = {
         "🔑 VIN:3C63RRHL9KG642308 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8860lb \n"
-        "🅱 Owner: Rassul"
+        "🅱 Owner: Rasul"
     ),
     "Водитель SOSLAN GAGLOEV": (
         "📌 Driver Name: SOSLAN GAGLOEV \n"
@@ -280,10 +280,6 @@ drivers_files = {
     "Водитель ALEKSEI LAMATKHANOV": {
         "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1wIiX2huhoeTQUT4MLZ9YoX5a7k-bXwzA/view?usp=drive_link"
-    },
-    "Водитель BILIKTO LAMATKHANOV": {
-        "photo": "https://drive.google.com/file/d/1iAjETTrVD9vGrDCFKzKxSlTTLqTzGGw7/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1RYAhmda76uidHpvdUnQnFxDsYRgkA4Ll/view?usp=drive_link"
     },
     "Водитель ALEKSANDR PAVLOV": {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
@@ -308,6 +304,10 @@ drivers_files = {
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1OPfSrp256GnBeTjZwOHF5wr5_w7o-QfP/view?usp=drive_link"
+    },
+    "Водитель NURLAN BAINEYEV": {
+        "photo": "https://drive.google.com/file/d/1p5erR4O8JZnTFYQR5m5o2Vmfl3tojWTZ/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1AYeKIQ4YT6WaNp464k96hBXuvZKtztej/view?usp=drive_link"
     },
     "Водитель MYKOLA MYKYTYUK": {
         "photo": "https://drive.google.com/file/d/1w48QLL9mRPKqGkZ1blOyMfhp5kE67JaY/view?usp=drive_link",
@@ -348,6 +348,10 @@ drivers_files = {
     "Водитель EVGENY SYROMITSKII": {
         "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1XwPSlu9JgUMg_q09fO1gWgjtCV1ZHno1/view?usp=drive_link"
+    },
+    "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL": {
+        "photo": "https://drive.google.com/file/d/1IayD23MhwuBumdnU0Elp0rt4nf8juqtb/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1Qnf4XsQi4foITTFYDohqif1JvqOCFtLi/view?usp=drive_link"
     },
     "Водитель RADZHAB MAGOMEDOV": {
         "photo": "https://drive.google.com/file/d/1ZkQQAhZD2eufBwiAr1SVJME8ffp-nK1m/view?usp=drive_link",
