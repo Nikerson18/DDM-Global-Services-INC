@@ -60,7 +60,7 @@ drivers_info = {
         "🚂 Trailer Number: 1 \n"
         "🔑 VIN:1GC4KTEY7SF130031 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 10000lb \n"
+        "⚖ Weight: 9480lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель ALEXANDER ARBUZOV": (
@@ -200,7 +200,7 @@ drivers_info = {
         "🚂 Trailer Number: 27 \n"
         "🔑 VIN:1FT8W3DT9SEC54495 \n"
         "⚓ Ramps: 12ft \n"
-        "⚖ Weight: 9400lb \n"
+        "⚖ Weight: 9300lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
     "Водитель EVGENY SYROMITSKII": (
@@ -230,7 +230,7 @@ drivers_info = {
         "🚂 Trailer Number: 26 \n"
         "🔑 VIN:1FT8W3DT1RED22119 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 10000lb \n"
+        "⚖ Weight: 9700lb \n"
         "🅱 Owner: Owner operator"
     ),
     "Водитель GEORGII RIONELI": (
