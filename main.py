@@ -215,7 +215,7 @@ drivers_info = {
     ),
     "Водители AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL": (
         "📌 Driver Name: AIDAR KHABIBULLIN и Водитель SHARAFUTDINOVA GUZEL \n"
-        "📞 Phone Number: 619-951-6457  and 619-951-6836 \n"
+        "📞 Phone Number: 619-951-6457 and 619-951-6836 \n"
         "🚛 Truck Number: 3 \n"
         "🚂 Trailer Number: 3 \n"
         "🔑 VIN:3C63RRGL0SG554913 \n"
