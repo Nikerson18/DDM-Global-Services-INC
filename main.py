@@ -138,7 +138,7 @@ drivers_info = {
         "📞 Phone Number: 718-344-0617 \n"
         "🚛 Truck Number: 4 \n"
         "🚂 Trailer Number: 4 \n"
-        "🔑 VIN:3C63RRHLXRG341413 \n"
+        "🔑 VIN:1FT8W3DT5TEC15632 \n"
         "⚓ Ramps: Mega Ramps \n"
         "⚖ Weight: 8500lb \n"
         "🅱 Owner: Alex Bizga"
@@ -325,7 +325,7 @@ drivers_files = {
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1Vhz7b_i7_kTZeSvw7XRVhFW9rM6ePkic/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1-SuxUNxII8U1jBxaY_Zb16VUD4rgSpd3/view?usp=drive_link"
     },
     "Водитель SOSLAN ALBOROV": {
         "photo": "https://drive.google.com/file/d/1DIyt2OsfPobeWOdoJ4xAEQLugdRAPaDs/view?usp=drive_link",
