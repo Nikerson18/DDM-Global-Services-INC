@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
-    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
+    "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель IHOR PIKHURETS", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
     "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель RADZHAB MAGOMEDOV", "Водитель RAMZAN DZHABRAILOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
@@ -93,12 +93,12 @@ drivers_info = {
         "⚖ Weight: 9000lb \n"
         "🅱 Owner: Radu Bragari"
     ),
-    "Водитель ILLIA HORBATOK": (
-        "📌 Driver Name: ILLIA HORBATOK \n"
-        "📞 Phone Number: 701-403-0994 \n"
-        "🚛 Truck Number: 14 \n"
-        "🚂 Trailer Number: 17 \n"
-        "🔑 VIN:3C63R3HL7RG339129 \n"
+    "Водитель IHOR PIKHURETS": (
+        "📌 Driver Name: IHOR PIKHURETS \n"
+        "📞 Phone Number: 470-232-4231 \n"
+        "🚛 Truck Number: 29 \n"
+        "🚂 Trailer Number: 29 \n"
+        "🔑 VIN:1FT8W3DT4SEC33747 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 8720lb \n"
         "🅱 Owner: Alex Bizga"
@@ -297,9 +297,9 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/17e18kZ1O8RPz3-4xkpAgj_Rsev2icA0p/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1355yJvYbY8onkEGG5-sRFvK2Rhxu15Ii/view?usp=drive_link"
     },
-    "Водитель ILLIA HORBATOK": {
-        "photo": "https://drive.google.com/file/d/171t2eY0cAwKMXdM4o3wokRqR41cCsrZN/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1IWQ-TKERVegzJ6y4GWVj1qXeg6DUuNZw/view?usp=drive_link"
+    "Водитель IHOR PIKHURETS": {
+        "photo": "https://drive.google.com/file/d/1rPj2F3N91EW3IYQCJ4vxEgNf7fdJbQtP/view?usp=drive_link",
+        "files": "https://drive.google.com/file/d/1vpyJIhiHsO4C5z5QbeOZgFpHKiBKB3s-/view?usp=drive_link"
     },
     "Водитель (DOS) DASTAN MASYLKANOV": {
         "photo": "https://drive.google.com/file/d/1laZ-h8AnpAxDuYKA9gg3zrYfML-JShBg/view?usp=drive_link",
