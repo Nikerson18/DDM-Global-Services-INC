@@ -37,7 +37,7 @@ dispatchers = {
     "🚚 Диспетчер David": ["Водитель ALEKSEI LAMATKHANOV", "Водитель ALEKSANDR PAVLOV", "Водитель ALEXANDER ARBUZOV", "Водитель RUSLAN SATBAYEV"],
     "🚌 Диспетчер Serghei": ["Водитель OLEH SEMENENKO", "Водитель ILLIA HORBATOK", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
-    "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель EVGENY SYROMITSKII", "Водитель RADZHAB MAGOMEDOV", "Водитель RAMZAN DZHABRAILOV"],
+    "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель GRIGORII MOSKALETS", "Водитель RADZHAB MAGOMEDOV", "Водитель RAMZAN DZHABRAILOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
     "✈ Диспетчер Max": ["Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
 }
@@ -66,11 +66,11 @@ drivers_info = {
     "Водитель ALEXANDER ARBUZOV": (
         "📌 Driver Name: ALEXANDER ARBUZOV \n"
         "📞 Phone Number: 765-568-3634 \n"
-        "🚛 Truck Number: 20 \n"
-        "🚂 Trailer Number: 20 \n"
-        "🔑 VIN:3C63RRJL6JG267700 \n"
+        "🚛 Truck Number: 2 \n"
+        "🚂 Trailer Number: 2 \n"
+        "🔑 VIN:3C63RRHL2RG108058 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 9200lb \n"
+        "⚖ Weight: 8800lb \n"
         "🅱 Owner: Sergiu Zambrean"
     ),
     "Водитель RUSLAN SATBAYEV": (
@@ -213,16 +213,6 @@ drivers_info = {
         "⚖ Weight: 9300lb \n"
         "🅱 Owner: Dumitru Ou"
     ),
-    "Водитель EVGENY SYROMITSKII": (
-        "📌 Driver Name: EVGENY SYROMITSKII \n"
-        "📞 Phone Number: 754-600-7170 \n"
-        "🚛 Truck Number: 2 \n"
-        "🚂 Trailer Number: 2 \n"
-        "🔑 VIN:3C63RRHL2RG108058 \n"
-        "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 8800lb \n"
-        "🅱 Owner: Radu Bragari"
-    ),
     "Водители AIDAR & GUZEL": (
         "📌 Driver Name: AIDAR KHABIBULLIN и SHARAFUTDINOVA GUZEL \n"
         "📞 Phone Number: 619-951-6457 and 619-951-6836 \n"
@@ -297,7 +287,7 @@ drivers_files = {
     },
     "Водитель ALEXANDER ARBUZOV": {
         "photo": "https://drive.google.com/file/d/1hLatH-VAeTsUWYlFXVsGTsY0qQu8xQg9/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1bE6dcsFX1YDwm6Ws-GaeWbn7Xcpqm0ku/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1xoOMo5NNtG0Dj6B3Aj3WAXbEd2NrsIcj/view?usp=drive_link"
     },
     "Водитель RUSLAN SATBAYEV": {
         "photo": "https://drive.google.com/file/d/1QdoekziBT4Ig5UlvlQtRIQsBR86f1JCQ/view?usp=drive_link",
@@ -358,10 +348,6 @@ drivers_files = {
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/1BKyWXI6KqUz_QHBHUZjJluL7LPbd1CxN/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/14LAC43biwNbVdtC1BYYPAJuVBXl41Fai/view?usp=drive_link"
-    },
-    "Водитель EVGENY SYROMITSKII": {
-        "photo": "https://drive.google.com/file/d/1InB6vM1OBKF89QLvpUiRU4GH3knLUXxP/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1XwPSlu9JgUMg_q09fO1gWgjtCV1ZHno1/view?usp=drive_link"
     },
     "Водители AIDAR & GUZEL": {
         "photo": "https://drive.google.com/file/d/1IayD23MhwuBumdnU0Elp0rt4nf8juqtb/view?usp=drive_link",
