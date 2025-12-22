@@ -126,9 +126,9 @@ drivers_info = {
     "Водитель MYKOLA MYKYTYUK": (
         "📌 Driver Name: MYKOLA MYKYTYUK \n"
         "📞 Phone Number: 313-349-8477 \n"
-        "🚛 Truck Number: 6 \n"
+        "🚛 Truck Number: 30 \n"
         "🚂 Trailer Number: 40 \n"
-        "🔑 VIN:1GC4KTEY6SF339163 \n"
+        "🔑 VIN:1FT8W3DTOTEC24478 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9380lb \n"
         "🅱 Owner: Owner Operator"
@@ -321,7 +321,7 @@ drivers_files = {
     },
     "Водитель MYKOLA MYKYTYUK": {
         "photo": "https://drive.google.com/file/d/1w48QLL9mRPKqGkZ1blOyMfhp5kE67JaY/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1sJkHlKcexUdkh0RbPcTP27A7Z10DlVkE/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1z3oXWE_850_UgLovJf9PPKxgv53PY2xm/view?usp=drive_link"
     },
     "Водитель DARMAN ORUZBAEV": {
         "photo": "https://drive.google.com/file/d/1-_9957CAuAIYgqxLmKxF4iWyT-YIIJv4/view?usp=drive_link",
