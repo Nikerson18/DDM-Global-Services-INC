@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Данные о диспетчерах и водителях (из исходного кода)
 dispatchers = {
     "🚌 Диспетчер Serghei": ["Водитель RADZHAB MAGOMEDOV", "Водитель OLEH SEMENENKO", "Водитель IHOR PIKHURETS", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
-    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV",  "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
+    "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
     "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель RUSLAN SATBAYEV", "Водитель ALEXANDER ARBUZOV", "Водитель GRIGORII MOSKALETS", "Водитель RAMZAN DZHABRAILOV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель ALEKSANDR PAVLOV", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
     "✈ Диспетчер Max": ["Водитель ALEKSEI LAMATKHANOV", "Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
