@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import telegram.error
 
 # 🔒 Список разрешённых пользователей (замени ID на реальные)
-ALLOWED_USERS = {5538804267, 8026256981}  # Замени на свои ID
+ALLOWED_USERS = {5538804267, 8026256981, 7275611563, 723670550, 5636776284}  # Замени на свои ID
 
 # 🔐 Функция проверки доступа по ID
 async def check_access(update: Update) -> bool:
