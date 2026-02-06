@@ -194,7 +194,7 @@ drivers_info = {
         "📌 Driver Name: BALZHIR RINCHINDORZHIEV \n"
         "📞 Phone Number: 312-481-1956 \n"
         "🚛 Truck Number: 15 \n"
-        "🚂 Trailer Number: 12 \n"
+        "🚂 Trailer Number: 42 \n"
         "🔑 VIN:1FT8W3DT3TEC24331 \n"
         "⚓ Ramps: 12ft \n"
         "⚖ Weight: 9100lb \n"
@@ -340,7 +340,7 @@ drivers_files = {
     },
     "Водитель BALZHIR RINCHINDORZHIEV": {
         "photo": "https://drive.google.com/file/d/1fi0Erh2cT-f8PzNWq9Nzrk8gQC5pwgX7/view?usp=drive_link",
-        "files": "https://drive.google.com/file/d/1yX3Xe-xpntIBdAekzRZmvCWeDvF0rVHs/view?usp=drive_link"
+        "files": "https://drive.google.com/file/d/1grr1tG9jW0fe0kx8BOKu8C94zR-DoCsh/view?usp=drive_link"
     },
     "Водитель GRIGORII MOSKALETS": {
         "photo": "https://drive.google.com/file/d/1BKyWXI6KqUz_QHBHUZjJluL7LPbd1CxN/view?usp=drive_link",
