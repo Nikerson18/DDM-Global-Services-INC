@@ -34,8 +34,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 dispatchers = {
     "🚌 Диспетчер Serghei": ["Водитель RADZHAB MAGOMEDOV", "Водитель OLEH SEMENENKO", "Водитель IHOR PIKHURETS", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
-    "🚂 Диспетчер Peter": ["Водитель BALZHIR RINCHINDORZHIEV", "Водитель RUSLAN SATBAYEV", "Водитель ALEXANDER ARBUZOV", "Водитель GRIGORII MOSKALETS", "Водитель RAMZAN DZHABRAILOV"],
-    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель ALEKSANDR PAVLOV", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
+    "🚂 Диспетчер Peter": ["Водитель ALEKSANDR PAVLOV", "Водитель Richard Seese", "Водитель RUSLAN SATBAYEV", "Водитель RAMZAN DZHABRAILOV", "Водитель GRIGORII MOSKALETS", "Водитель Akhmadjon Askarov" ],
+    "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
     "✈ Диспетчер Max": ["Водитель ALEKSEI LAMATKHANOV", "Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
 }
 
@@ -53,22 +53,62 @@ drivers_info = {
     "Водитель ALEKSANDR PAVLOV": (
         "📌 Driver Name: ALEKSANDR PAVLOV \n"
         "📞 Phone Number: 929-721-9669 \n"
-        "🚛 Truck Number: 1 \n"
-        "🚂 Trailer Number: 1 \n"
-        "🔑 VIN:1GC4KTEY7SF130031 \n"
+        "🚛 Truck Number: 6 \n"
+        "🚂 Trailer Number: 15 \n"
+        "🔑 VIN: 1GC4KTEY7SF130031 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 9480lb \n"
         "🅱 Owner: Owner Operator"
     ),
-    "Водитель ALEXANDER ARBUZOV": (
-        "📌 Driver Name: ALEXANDER ARBUZOV \n"
-        "📞 Phone Number: 765-568-3634 \n"
-        "🚛 Truck Number: 2 \n"
-        "🚂 Trailer Number: 2 \n"
-        "🔑 VIN:3C63RRHL2RG108058 \n"
+    "Водитель Richard Seese": (
+        "📌 Driver Name: Richard Seese \n"
+        "📞 Phone Number: 443-934-1236 \n"
+        "🚛 Truck Number: 16 \n"
+        "🚂 Trailer Number: 29 \n"
+        "🔑 VIN: 1FT8W3DT9TEC15584 \n"
         "⚓ Ramps: 8ft \n"
-        "⚖ Weight: 8800lb \n"
-        "🅱 Owner: Sergiu Zambrean"
+        "⚖ Weight: 10180lb \n"
+        "🅱 Owner: Owner Operator"
+    ),
+    "Водитель RUSLAN SATBAYEV": (
+        "📌 Driver Name: RUSLAN SATBAYEV \n"
+        "📞 Phone Number: 786-651-9828 \n"
+        "🚛 Truck Number: 18 \n"
+        "🚂 Trailer Number: 18 \n"
+        "🔑 VIN: 1FT7W2BT2REC20983 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 10120lb \n"
+        "🅱 Owner: Owner Operator"
+    ),
+    "Водитель RAMZAN DZHABRAILOV": (
+        "📌 Driver Name: RAMZAN DZHABRAILOV \n"
+        "📞 Phone Number: 786-960-2200 \n"
+        "🚛 Truck Number: 17 \n"
+        "🚂 Trailer Number: 23 \n"
+        "🔑 VIN: 1FT8W3DT5TEC24024 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9260lb \n"
+        "🅱 Owner: Owner Operator"
+    ),
+    "Водитель GRIGORII MOSKALETS": (
+        "📌 Driver Name: GRIGORII MOSKALETS \n"
+        "📞 Phone Number: 754-284-6442 \n"
+        "🚛 Truck Number: 12 \n"
+        "🚂 Trailer Number: 6 \n"
+        "🔑 VIN: 1FT8W3DT6TEC23349 \n"
+        "⚓ Ramps: 8ftft \n"
+        "⚖ Weight: 9620lb \n"
+        "🅱 Owner: Company Driver"
+    ),
+    "Водитель Akhmadjon Askarov": (
+        "📌 Driver Name: Akhmadjon Askarov \n"
+        "📞 Phone Number: 813-367-7162 \n"
+        "🚛 Truck Number: 15 \n"
+        "🚂 Trailer Number: 47 \n"
+        "🔑 VIN: 1FT8W3DT3TEC24331 \n"
+        "⚓ Ramps: 12ft \n"
+        "⚖ Weight: 9620lb \n"
+        "🅱 Owner: Company Driver"
     ),
     "Водитель RUSLAN SATBAYEV": (
         "📌 Driver Name: RUSLAN SATBAYEV \n"
