@@ -326,6 +326,14 @@ drivers_files = {
         "photo": "https://drive.google.com/file/d/1hLatH-VAeTsUWYlFXVsGTsY0qQu8xQg9/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1xoOMo5NNtG0Dj6B3Aj3WAXbEd2NrsIcj/view?usp=drive_link"
     },
+    "Водитель Richard Seese": {
+        "photo": "https://drive.google.com/",
+        "files": "https://drive.google.com/"
+    },
+    "Водитель Akhmadjon Askarov": {
+        "photo": "https://drive.google.com/",
+        "files": "https://drive.google.com/"
+    },
     "Водитель RUSLAN SATBAYEV": {
         "photo": "https://drive.google.com/file/d/1QdoekziBT4Ig5UlvlQtRIQsBR86f1JCQ/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1nRUum9Vk021IMrrPC3_--ukSo7ZLDZSQ/view?usp=drive_link"
