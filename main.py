@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import telegram.error
 
 # 🔒 Список разрешённых пользователей (замени ID на реальные)
-ALLOWED_USERS = {5538804267, 8026256981, 7275611563, 723670550, 5636776284}  # Замени на свои ID
+ALLOWED_USERS = {5538804267, 8026256981, 7275611563, 723670550, 5636776284, 8717807685}  # Замени на свои ID
 
 # 🔐 Функция проверки доступа по ID
 async def check_access(update: Update) -> bool:
@@ -35,8 +35,10 @@ dispatchers = {
     "🚌 Диспетчер Serghei": ["Водитель RADZHAB MAGOMEDOV", "Водитель OLEH SEMENENKO", "Водитель IHOR PIKHURETS", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
     "🚂 Диспетчер Peter": ["Водитель ALEKSANDR PAVLOV", "Водитель Richard Seese", "Водитель RUSLAN SATBAYEV", "Водитель RAMZAN DZHABRAILOV", "Водитель GRIGORII MOSKALETS", "Водитель Akhmadjon Askarov" ],
+    "🚚 Диспетчер Ivan": ["Водитель VASYL HLUSHAK" ],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
     "✈ Диспетчер Max": ["Водитель ALEKSEI LAMATKHANOV", "Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
+
 }
 
 drivers_info = {
@@ -48,6 +50,16 @@ drivers_info = {
         "🔑 VIN:3C63RRGL2RG112628 \n"
         "⚓ Ramps: 8ft \n"
         "⚖ Weight: 10000lb \n"
+        "🅱 Owner: Owner Operator"
+    ),
+    "Водитель VASYL HLUSHAK": (
+        "📌 Driver Name: VASYL HLUSHAK \n"
+        "📞 Phone Number: 215-820-8515 \n"
+        "🚛 Truck Number: 2 \n"
+        "🚂 Trailer Number: 13 \n"
+        "🔑 VIN:3C7WRSCL4RG328356 \n"
+        "⚓ Ramps: n/a \n"
+        "⚖ Weight: n/a \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель ALEKSANDR PAVLOV": (
@@ -317,6 +329,10 @@ drivers_files = {
     "Водитель ALEKSEI LAMATKHANOV": {
         "photo": "https://drive.google.com/file/d/1gjpo3VgvjGobRuNsjRBeRfdRZpLBCjud/view?usp=drive_link",
         "files": "https://drive.google.com/file/d/1wIiX2huhoeTQUT4MLZ9YoX5a7k-bXwzA/view?usp=drive_link"
+    },
+    "Водитель VASYL HLUSHAK": {
+        "photo": "https://drive.google.com/",
+        "files": "https://drive.google.com/"
     },
     "Водитель ALEKSANDR PAVLOV": {
         "photo": "https://drive.google.com/file/d/1CxXCHz5L6hogjHAsQ-Fb60r2U4mODuId/view?usp=drive_link",
