@@ -35,7 +35,7 @@ dispatchers = {
     "🚌 Диспетчер Serghei": ["Водитель RADZHAB MAGOMEDOV", "Водитель OLEH SEMENENKO", "Водитель IHOR PIKHURETS", "Водитель MYKOLA MYKYTYUK", "Водители AIDAR & GUZEL"],
     "🚋 Диспетчер Vick": ["Водитель DARMAN ORUZBAEV", "Водитель ERDEM DORZHIEV", "Водитель TOTRAZ ABAEV", "Водитель (DOS) DASTAN MASYLKANOV", "Водитель NURLAN BAINEYEV"],
     "🚂 Диспетчер Peter": ["Водитель ALEKSANDR PAVLOV", "Водитель Richard Seese", "Водитель RUSLAN SATBAYEV", "Водитель RAMZAN DZHABRAILOV", "Водитель GRIGORII MOSKALETS", "Водитель Akhmadjon Askarov" ],
-    "🚚 Диспетчер Ivan": ["Водитель VASYL HLUSHAK" ],
+    "🚚 Диспетчер Ivan": ["Водитель VASYL HLUSHAK", "Водитель BAZAR AYUSHIEV"],
     "🚀 Диспетчер Dima": ["Водитель GEORGII RIONELI", "Водитель SERGHEI CIOBANU", "Водитель ALBERT ABAIKHANOV", "Водитель CARVIS SMITH Jr" ],
     "✈ Диспетчер Max": ["Водитель ALEKSEI LAMATKHANOV", "Водитель OLEG RESHAEV", "Водитель SOSLAN GAGLOEV"]
 
@@ -52,14 +52,24 @@ drivers_info = {
         "⚖ Weight: 10000lb \n"
         "🅱 Owner: Owner Operator"
     ),
+    "Водитель BAZAR AYUSHIEV": (
+        "📌 Driver Name: BAZAR AYUSHIEV \n"
+        "📞 Phone Number: 646-255-8143 \n"
+        "🚛 Truck Number: 7 \n"
+        "🚂 Trailer Number: 12 \n"
+        "🔑 VIN:1FT8W4DT5TEC07472 \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9200lb \n"
+        "🅱 Owner: Owner Operator"
+    ),
     "Водитель VASYL HLUSHAK": (
         "📌 Driver Name: VASYL HLUSHAK \n"
         "📞 Phone Number: 215-820-8515 \n"
         "🚛 Truck Number: 2 \n"
         "🚂 Trailer Number: 13 \n"
         "🔑 VIN:3C7WRSCL4RG328356 \n"
-        "⚓ Ramps: n/a \n"
-        "⚖ Weight: n/a \n"
+        "⚓ Ramps: 8ft \n"
+        "⚖ Weight: 9700lb \n"
         "🅱 Owner: Owner Operator"
     ),
     "Водитель ALEKSANDR PAVLOV": (
@@ -331,6 +341,10 @@ drivers_files = {
         "files": "https://drive.google.com/file/d/1wIiX2huhoeTQUT4MLZ9YoX5a7k-bXwzA/view?usp=drive_link"
     },
     "Водитель VASYL HLUSHAK": {
+        "photo": "https://drive.google.com/",
+        "files": "https://drive.google.com/"
+    },
+    "Водитель BAZAR AYUSHIEV": {
         "photo": "https://drive.google.com/",
         "files": "https://drive.google.com/"
     },
